@@ -13,5 +13,8 @@ DirectoryIndex index.php index.html
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
   Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
   Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
-  Header set Cache-Control "public, max-age=604800"
+  Header set Cache-Control "no-cache, no-store, must-revalidate" "expr=%{REQUEST_URI} =~ m#^/$# || %{REQUEST_URI} =~ m#\.php$#"
+  Header set Pragma "no-cache" "expr=%{REQUEST_URI} =~ m#^/$# || %{REQUEST_URI} =~ m#\.php$#"
+  Header set Expires "0" "expr=%{REQUEST_URI} =~ m#^/$# || %{REQUEST_URI} =~ m#\.php$#"
+  Header set Cache-Control "public, max-age=2592000, immutable" "expr=%{REQUEST_URI} =~ m#\.(?:css|js|webp|png|jpg|jpeg|svg|ico|woff2?)$#"
 </IfModule>
