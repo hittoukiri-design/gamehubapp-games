@@ -357,20 +357,26 @@ h1 span {
 
 .bat-ball-art {
   position: relative;
-  z-index: 4;
-  flex-shrink: 0;
-  margin-bottom: -40px;
+  flex: 0 0 210px;
+  width: 210px;
+  overflow: visible;
+  align-self: flex-end;
+  margin-bottom: -30px;
   pointer-events: none;
+  z-index: 4;
 }
 
 .bat-img {
+  position: absolute;
+  right: -20px;
+  bottom: 0;
   width: auto;
-  height: 640px;
+  height: 620px;
   max-width: none;
   object-fit: contain;
   filter: drop-shadow(0 30px 60px rgba(0,0,0,.85));
   transform: rotate(10deg);
-  transform-origin: bottom center;
+  transform-origin: bottom right;
 }
 
 .floating-cards {
