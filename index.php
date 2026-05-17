@@ -14,7 +14,7 @@
   <meta property="og:site_name" content="Yaarwin Games">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#07111F">
-  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/img/favicon.png?v=<?= time() ?>" type="image/png">
   <link rel="stylesheet" href="/assets/css/styles.css?v=<?= time() ?>">
   <script type="application/ld+json">
   {
