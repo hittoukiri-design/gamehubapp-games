@@ -82,8 +82,7 @@
       </div>
       <div class="hero-visual" aria-label="Cricket bat, ball and guide cards">
         <div class="bat-ball-art" aria-hidden="true">
-          <div class="bat"></div>
-          <div class="ball"></div>
+          <img src="/assets/img/bat_ball_transparent.png" class="bat-img" alt="Cricket Bat and Ball">
         </div>
         <div class="floating-cards">
           <article class="float-card green">
