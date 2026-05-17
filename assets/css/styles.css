@@ -284,7 +284,13 @@ h1 span {
 }
 
 .text-green { color: #16a765; text-shadow: 0 0 32px rgba(22,167,101,.28); }
-.text-orange { color: #ff9f1c; text-shadow: 0 0 32px rgba(255,159,28,.28); }
+.text-orange { 
+  background: linear-gradient(90deg, #ff9f1c, #f4c95d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #ff9f1c; 
+  display: inline-block;
+}
 
 .hero-copy {
   max-width: 650px;
@@ -341,20 +347,20 @@ h1 span {
 
 .bat-ball-art {
   position: absolute;
-  right: 280px;
-  top: -120px;
-  width: 200px;
-  height: 750px;
+  right: 220px;
+  top: -180px;
+  width: 250px;
+  height: 900px;
   z-index: 5;
   pointer-events: none;
 }
 
 .bat-img {
   width: auto;
-  height: 750px;
+  height: 900px;
   object-fit: contain;
   filter: drop-shadow(0 40px 80px rgba(0,0,0,.9));
-  transform: rotate(0deg) translateX(40px) translateY(50px);
+  transform: rotate(5deg) translateX(50px) translateY(50px);
 }
 
 .floating-cards {
@@ -378,16 +384,24 @@ h1 span {
   border: 1px solid rgba(255,255,255,.1);
 }
 
-.float-card.green { background: linear-gradient(90deg, #103a27, #0a1f16); border-color: #16a765; }
-.float-card.purple { background: linear-gradient(90deg, #30164a, #150a22); border-color: #7c4dff; }
-.float-card.saffron { background: linear-gradient(90deg, #4a1916, #220b0a); border-color: #e53935; }
+.float-card.green { background: linear-gradient(90deg, #104020, #0a1f16); border-color: #16a765; }
+.float-card.purple { background: linear-gradient(90deg, #30164a, #1a0a2a); border-color: #7c4dff; }
+.float-card.saffron { background: linear-gradient(90deg, #601515, #300a0a); border-color: #e53935; }
 .float-card.blue { background: linear-gradient(90deg, #2b1b54, #120b24); border-color: #5a3cbb; }
-.float-card.gold { background: linear-gradient(90deg, #4a3810, #221a07); border-color: #f4c95d; }
-.float-card.violet { background: linear-gradient(90deg, #122f5a, #0b1628); border-color: #2b78ff; }
+.float-card.gold { background: linear-gradient(90deg, #504010, #221a07); border-color: #f4c95d; }
+.float-card.violet { background: linear-gradient(90deg, #103060, #0a1a30); border-color: #2b78ff; }
+
+.card-text {
+  flex: 1;
+  min-width: 0;
+}
 
 .float-card h3 {
   margin: 0 0 2px;
   font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .float-card p {
@@ -395,14 +409,19 @@ h1 span {
   color: rgba(248,243,232,.7);
   font-size: 11px;
   line-height: 1.25;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .thumb {
-  width: 110px;
+  width: 140px;
   height: 100%;
-  border-radius: 8px;
+  border-radius: 0;
   object-fit: cover;
   flex-shrink: 0;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 20%);
+  mask-image: linear-gradient(to right, transparent 0%, black 20%);
 }
 
 .section-panel {

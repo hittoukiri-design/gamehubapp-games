@@ -67,7 +67,7 @@
       <div class="stadium-lights" aria-hidden="true"></div>
       <div class="hero-content">
         <p class="eyebrow">Your Ultimate Hub</p>
-        <h1>Cricket Fever Meets <span class="text-green">India&rsquo;s</span> <span class="text-orange">Hottest</span> Games</h1>
+        <h1>Cricket Fever Meets <span class="text-orange">India&rsquo;s</span> <span class="text-green">Hottest</span> Games</h1>
         <p class="hero-copy">Explore cricket culture, trending play styles, popular card classics, and fast-paced digital entertainment — all in one modern hub for Indian users.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#trending">Explore Trending Games <span aria-hidden="true" class="btn-arrow">→</span></a>
@@ -91,7 +91,7 @@
           </article>
           <article class="float-card purple">
             <div class="card-text"><h3>Teen Patti</h3><p>Classic card game loved in India</p></div>
-            <img src="/assets/img/thumb_teen_patti.png" alt="Teen Patti" class="thumb" loading="lazy">
+            <img src="/assets/img/thumb_teen.png" alt="Teen Patti" class="thumb" loading="lazy">
           </article>
           <article class="float-card saffron">
             <div class="card-text"><h3>Rummy</h3><p>Skill-based fun for all players</p></div>
@@ -107,7 +107,7 @@
           </article>
           <article class="float-card violet">
             <div class="card-text"><h3>Live Match Hub</h3><p>Scores, stats & highlights</p></div>
-            <img src="/assets/img/thumb_live_match.png" alt="Live Match Hub" class="thumb" loading="lazy">
+            <img src="/assets/img/thumb_live.png" alt="Live Match Hub" class="thumb" loading="lazy">
           </article>
         </div>
       </div>
