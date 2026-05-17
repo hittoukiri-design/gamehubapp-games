@@ -56,7 +56,7 @@
         <a class="search-btn" href="#blog" aria-label="Search guides">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.8 18.1a7.3 7.3 0 1 1 5.2-2.1l4 4-1.6 1.6-4-4a7.2 7.2 0 0 1-3.6.5Zm0-2.4a4.9 4.9 0 1 0 0-9.8 4.9 4.9 0 0 0 0 9.8Z"/></svg>
         </a>
-        <a class="btn btn-primary" href="#trending">Explore Games</a>
+        <a class="btn btn-primary" href="#trending">Explore Games <span aria-hidden="true" class="btn-arrow">→</span></a>
       </div>
     </nav>
   </header>
@@ -70,7 +70,7 @@
         <h1>Cricket Fever Meets India&rsquo;s <span>Hottest</span> Games</h1>
         <p class="hero-copy">Explore cricket culture, trending play styles, popular card classics, and fast-paced digital entertainment — all in one modern hub for Indian users.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#trending">Explore Trending Games</a>
+          <a class="btn btn-primary" href="#trending">Explore Trending Games <span aria-hidden="true" class="btn-arrow">→</span></a>
           <a class="btn btn-outline" href="#cricket">View Cricket Guides</a>
         </div>
         <div class="hero-trust" aria-label="Yaarwin Games highlights">
@@ -82,7 +82,8 @@
       </div>
       <div class="hero-visual" aria-label="Cricket bat, ball and guide cards">
         <div class="bat-ball-art" aria-hidden="true">
-          <img src="/assets/img/hero_bat_ball.png" alt="Cricket Bat and Ball" loading="lazy">
+          <div class="bat"></div>
+          <div class="ball"></div>
         </div>
         <div class="floating-cards">
           <article class="float-card green">
