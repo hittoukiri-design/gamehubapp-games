@@ -252,12 +252,15 @@ img, svg { display: block; max-width: 100%; }
 
 .hero-visual {
   flex: 0 0 auto;
-  width: 580px;
+  width: 560px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 8px;
   position: relative;
   z-index: 2;
-  display: flex;
-  justify-content: flex-end;
-  align-items: stretch;
+  overflow: visible;
 }
 
 .eyebrow {
@@ -353,20 +356,21 @@ h1 span {
 .mini-icon.india::before { content: "✦"; color: var(--saffron); }
 
 .bat-ball-art {
-  position: absolute;
-  left: 20px;
-  bottom: -20px;
-  z-index: 3;
+  position: relative;
+  z-index: 4;
+  flex-shrink: 0;
+  margin-bottom: -40px;
   pointer-events: none;
 }
 
 .bat-img {
   width: auto;
-  height: 680px;
+  height: 640px;
   max-width: none;
   object-fit: contain;
   filter: drop-shadow(0 30px 60px rgba(0,0,0,.85));
   transform: rotate(10deg);
+  transform-origin: bottom center;
 }
 
 .floating-cards {
@@ -374,10 +378,9 @@ h1 span {
   flex-direction: column;
   gap: 10px;
   width: 260px;
-  position: relative;
-  z-index: 6;
   flex-shrink: 0;
   align-self: center;
+  z-index: 5;
 }
 
 .float-card {
