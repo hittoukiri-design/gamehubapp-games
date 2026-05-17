@@ -354,9 +354,9 @@ h1 span {
 
 .bat-ball-art {
   position: absolute;
-  left: 80px;
+  left: 20px;
   bottom: -20px;
-  z-index: 5;
+  z-index: 3;
   pointer-events: none;
 }
 
@@ -366,7 +366,7 @@ h1 span {
   max-width: none;
   object-fit: contain;
   filter: drop-shadow(0 30px 60px rgba(0,0,0,.85));
-  transform: rotate(8deg);
+  transform: rotate(10deg);
 }
 
 .floating-cards {
@@ -436,7 +436,10 @@ h1 span {
   flex: 0 0 90px;
   border-radius: 0;
   object-fit: cover;
+  object-position: center;
   display: block;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 35%);
+  mask-image: linear-gradient(to right, transparent 0%, black 35%);
 }
 
 .section-panel {
