@@ -67,7 +67,7 @@
       <div class="stadium-lights" aria-hidden="true"></div>
       <div class="hero-content">
         <p class="eyebrow">Your Ultimate Hub</p>
-        <h1>Cricket Fever Meets India&rsquo;s <span>Hottest</span> Games</h1>
+        <h1>Cricket Fever Meets <span class="text-green">India&rsquo;s</span> <span class="text-orange">Hottest</span> Games</h1>
         <p class="hero-copy">Explore cricket culture, trending play styles, popular card classics, and fast-paced digital entertainment — all in one modern hub for Indian users.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#trending">Explore Trending Games <span aria-hidden="true" class="btn-arrow">→</span></a>
@@ -86,28 +86,28 @@
         </div>
         <div class="floating-cards">
           <article class="float-card green">
+            <div class="card-text"><h3>Cricket</h3><p>Live scores, news & match insights</p></div>
             <img src="/assets/img/thumb_cricket.png" alt="Cricket" class="thumb" loading="lazy">
-            <div><h3>Cricket</h3><p>Live scores, news & match insights</p></div>
           </article>
           <article class="float-card purple">
+            <div class="card-text"><h3>Teen Patti</h3><p>Classic card game loved in India</p></div>
             <img src="/assets/img/thumb_teen_patti.png" alt="Teen Patti" class="thumb" loading="lazy">
-            <div><h3>Teen Patti</h3><p>Classic card game loved in India</p></div>
           </article>
           <article class="float-card saffron">
+            <div class="card-text"><h3>Rummy</h3><p>Skill-based fun for all players</p></div>
             <img src="/assets/img/thumb_rummy.png" alt="Rummy" class="thumb" loading="lazy">
-            <div><h3>Rummy</h3><p>Skill-based fun for all players</p></div>
           </article>
           <article class="float-card blue">
+            <div class="card-text"><h3>Quick Play</h3><p>Fast games, short & exciting</p></div>
             <img src="/assets/img/thumb_aviator.png" alt="Quick Play" class="thumb" loading="lazy">
-            <div><h3>Quick Play</h3><p>Fast games, short & exciting</p></div>
           </article>
           <article class="float-card gold">
+            <div class="card-text"><h3>Fan Picks</h3><p>Popular games users love</p></div>
             <img src="/assets/img/thumb_wingo.png" alt="Fan Picks" class="thumb" loading="lazy">
-            <div><h3>Fan Picks</h3><p>Popular games users love</p></div>
           </article>
           <article class="float-card violet">
+            <div class="card-text"><h3>Live Match Hub</h3><p>Scores, stats & highlights</p></div>
             <img src="/assets/img/thumb_live_match.png" alt="Live Match Hub" class="thumb" loading="lazy">
-            <div><h3>Live Match Hub</h3><p>Scores, stats & highlights</p></div>
           </article>
         </div>
       </div>
