@@ -15,7 +15,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#07111F">
   <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/styles.css?v=<?= time() ?>">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -82,32 +82,32 @@
       </div>
       <div class="hero-visual" aria-label="Cricket bat, ball and guide cards">
         <div class="bat-ball-art" aria-hidden="true">
-          <img src="/assets/img/bat_ball_transparent.png" class="bat-img" alt="Cricket Bat and Ball">
+          <img src="/assets/img/bat_ball_transparent.png?v=<?= time() ?>" class="bat-img" alt="Cricket Bat and Ball">
         </div>
         <div class="floating-cards">
           <article class="float-card green">
             <div class="card-text"><h3>Cricket</h3><p>Live scores, news & match insights</p></div>
-            <img src="/assets/img/thumb_cricket.png" alt="Cricket" class="thumb" loading="lazy">
+            <img src="/assets/img/thumb_cricket.png?v=<?= time() ?>" alt="Cricket" class="thumb" loading="lazy">
           </article>
           <article class="float-card purple">
             <div class="card-text"><h3>Teen Patti</h3><p>Classic card game loved in India</p></div>
-            <img src="/assets/img/thumb_teen.png" alt="Teen Patti" class="thumb" loading="lazy">
+            <img src="/assets/img/thumb_teen.png?v=<?= time() ?>" alt="Teen Patti" class="thumb" loading="lazy">
           </article>
           <article class="float-card saffron">
             <div class="card-text"><h3>Rummy</h3><p>Skill-based fun for all players</p></div>
-            <img src="/assets/img/thumb_rummy.png" alt="Rummy" class="thumb" loading="lazy">
+            <img src="/assets/img/thumb_rummy.png?v=<?= time() ?>" alt="Rummy" class="thumb" loading="lazy">
           </article>
           <article class="float-card blue">
             <div class="card-text"><h3>Quick Play</h3><p>Fast games, short & exciting</p></div>
-            <img src="/assets/img/thumb_aviator.png" alt="Quick Play" class="thumb" loading="lazy">
+            <img src="/assets/img/thumb_aviator.png?v=<?= time() ?>" alt="Quick Play" class="thumb" loading="lazy">
           </article>
           <article class="float-card gold">
             <div class="card-text"><h3>Fan Picks</h3><p>Popular games users love</p></div>
-            <img src="/assets/img/thumb_wingo.png" alt="Fan Picks" class="thumb" loading="lazy">
+            <img src="/assets/img/thumb_wingo.png?v=<?= time() ?>" alt="Fan Picks" class="thumb" loading="lazy">
           </article>
           <article class="float-card violet">
             <div class="card-text"><h3>Live Match Hub</h3><p>Scores, stats & highlights</p></div>
-            <img src="/assets/img/thumb_live.png" alt="Live Match Hub" class="thumb" loading="lazy">
+            <img src="/assets/img/thumb_live.png?v=<?= time() ?>" alt="Live Match Hub" class="thumb" loading="lazy">
           </article>
         </div>
       </div>
