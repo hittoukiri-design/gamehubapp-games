@@ -354,19 +354,19 @@ h1 span {
 
 .bat-ball-art {
   position: absolute;
-  left: -10px;
-  bottom: -40px;
+  left: 80px;
+  bottom: -20px;
   z-index: 5;
   pointer-events: none;
 }
 
 .bat-img {
   width: auto;
-  height: 700px;
+  height: 680px;
   max-width: none;
   object-fit: contain;
-  filter: drop-shadow(0 40px 80px rgba(0,0,0,.9));
-  transform: scaleX(-1) rotate(-8deg);
+  filter: drop-shadow(0 30px 60px rgba(0,0,0,.85));
+  transform: rotate(8deg);
 }
 
 .floating-cards {
@@ -429,11 +429,14 @@ h1 span {
 }
 
 .thumb {
-  width: 100px;
-  height: 100%;
+  width: 90px;
+  min-width: 90px;
+  max-width: 90px;
+  height: 76px;
+  flex: 0 0 90px;
   border-radius: 0;
   object-fit: cover;
-  flex-shrink: 0;
+  display: block;
 }
 
 .section-panel {
