@@ -1072,3 +1072,56 @@ h1 span {
     width: 72px;
   }
 }
+
+/* Image Integration Styles */
+.bat-ball-art img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 20px 40px rgba(0,0,0,.6));
+  position: relative;
+  z-index: 2;
+}
+
+img.thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-art img, .article-art img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.card-art::before, .article-art::before {
+  z-index: 1;
+}
+
+/* Hide old CSS art overlays */
+.bat-ball-art .bat,
+.bat-ball-art .ball,
+.cricket-art::after,
+.card-art.cricket::after,
+.article-art.cricket::after,
+.cards-art::after,
+.card-art.teen::after,
+.card-art.rummy::after,
+.card-art.andar::after,
+.article-art.teen::after,
+.article-art.andar::after,
+.plane-art::after,
+.card-art.aviator::after,
+.article-art.aviator::after,
+.star-art::after,
+.card-art.wingo::after,
+.stadium-art::after,
+.card-art.live::after,
+.article-art.live::after,
+.card-art.strategy::after {
+  display: none !important;
+}

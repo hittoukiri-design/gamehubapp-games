@@ -82,32 +82,31 @@
       </div>
       <div class="hero-visual" aria-label="Cricket bat, ball and guide cards">
         <div class="bat-ball-art" aria-hidden="true">
-          <div class="bat"></div>
-          <div class="ball"></div>
+          <img src="/assets/img/hero_bat_ball.png" alt="Cricket Bat and Ball" loading="lazy">
         </div>
         <div class="floating-cards">
           <article class="float-card green">
-            <span class="thumb cricket-art"></span>
+            <img src="/assets/img/thumb_cricket.png" alt="Cricket" class="thumb" loading="lazy">
             <div><h3>Cricket</h3><p>Live scores, news & match insights</p></div>
           </article>
           <article class="float-card purple">
-            <span class="thumb cards-art hearts"></span>
+            <img src="/assets/img/thumb_teen_patti.png" alt="Teen Patti" class="thumb" loading="lazy">
             <div><h3>Teen Patti</h3><p>Classic card game loved in India</p></div>
           </article>
           <article class="float-card saffron">
-            <span class="thumb cards-art diamonds"></span>
+            <img src="/assets/img/thumb_rummy.png" alt="Rummy" class="thumb" loading="lazy">
             <div><h3>Rummy</h3><p>Skill-based fun for all players</p></div>
           </article>
           <article class="float-card blue">
-            <span class="thumb plane-art"></span>
+            <img src="/assets/img/thumb_aviator.png" alt="Quick Play" class="thumb" loading="lazy">
             <div><h3>Quick Play</h3><p>Fast games, short & exciting</p></div>
           </article>
           <article class="float-card gold">
-            <span class="thumb star-art"></span>
+            <img src="/assets/img/thumb_wingo.png" alt="Fan Picks" class="thumb" loading="lazy">
             <div><h3>Fan Picks</h3><p>Popular games users love</p></div>
           </article>
           <article class="float-card violet">
-            <span class="thumb stadium-art"></span>
+            <img src="/assets/img/thumb_live_match.png" alt="Live Match Hub" class="thumb" loading="lazy">
             <div><h3>Live Match Hub</h3><p>Scores, stats & highlights</p></div>
           </article>
         </div>
@@ -137,7 +136,9 @@
           foreach ($categories as $cat):
         ?>
         <article class="category-card">
-          <div class="card-art <?= htmlspecialchars($cat[2], ENT_QUOTES) ?>" role="img" aria-label="<?= htmlspecialchars($cat[0], ENT_QUOTES) ?> illustration"></div>
+          <div class="card-art <?= htmlspecialchars($cat[2], ENT_QUOTES) ?>" role="img" aria-label="<?= htmlspecialchars($cat[0], ENT_QUOTES) ?> illustration">
+            <img src="/assets/img/thumb_<?= htmlspecialchars($cat[2], ENT_QUOTES) ?>.png" alt="" loading="lazy">
+          </div>
           <div class="card-content">
             <h3><?= htmlspecialchars($cat[0]) ?></h3>
             <p><?= htmlspecialchars($cat[1]) ?></p>
@@ -220,7 +221,9 @@
           foreach ($articles as $article):
         ?>
         <article class="article-card">
-          <div class="article-art <?= htmlspecialchars($article[4], ENT_QUOTES) ?>" role="img" aria-label="<?= htmlspecialchars($article[1], ENT_QUOTES) ?> thumbnail"></div>
+          <div class="article-art <?= htmlspecialchars($article[4], ENT_QUOTES) ?>" role="img" aria-label="<?= htmlspecialchars($article[1], ENT_QUOTES) ?> thumbnail">
+            <img src="/assets/img/thumb_<?= htmlspecialchars($article[4], ENT_QUOTES) ?>.png" alt="" loading="lazy">
+          </div>
           <div class="article-body">
             <span class="badge"><?= htmlspecialchars($article[0]) ?></span>
             <h3><?= htmlspecialchars($article[1]) ?></h3>
