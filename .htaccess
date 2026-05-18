@@ -1,20 +1,31 @@
 Options -Indexes
 DirectoryIndex index.php index.html
 
+<FilesMatch "^(ywag-visits)\.json$|^\.env$|^\.ht|\.(bak|backup|old|orig|log|sql|sqlite|db|ini|yml|yaml|zip|tar|tgz|gz|7z|rar)$">
+  Require all denied
+</FilesMatch>
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteCond %{HTTPS} !=on
   RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+  RewriteRule (^|/)\. - [F,L]
   RewriteRule ^guides/?$ guides.php [L,QSA]
   RewriteRule ^guides/([a-z0-9-]+)/?$ guide.php?slug=$1 [L,QSA]
 </IfModule>
 
 <IfModule mod_headers.c>
+  Header always unset X-Powered-By
   Header always set X-Content-Type-Options "nosniff"
   Header always set X-Frame-Options "SAMEORIGIN"
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
-  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+  Header always set Permissions-Policy "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()"
+  Header always set Cross-Origin-Opener-Policy "same-origin-allow-popups"
+  Header always set X-DNS-Prefetch-Control "off"
+  Header always set X-Download-Options "noopen"
+  Header always set X-Permitted-Cross-Domain-Policies "none"
   Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+  Header always set Content-Security-Policy "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; form-action 'self' https://yaarwin.org; img-src 'self' data: https:; font-src 'self' data: https:; style-src 'self' 'unsafe-inline' https:; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://static.cloudflareinsights.com; connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://stats.g.doubleclick.net https://googleads.g.doubleclick.net https://static.cloudflareinsights.com https://api.telegram.org; frame-src 'self' https://www.googletagmanager.com https://td.doubleclick.net; upgrade-insecure-requests"
   Header set Cache-Control "no-cache, no-store, must-revalidate" "expr=%{REQUEST_URI} =~ m#^/$# || %{REQUEST_URI} =~ m#\.php$#"
   Header set Pragma "no-cache" "expr=%{REQUEST_URI} =~ m#^/$# || %{REQUEST_URI} =~ m#\.php$#"
   Header set Expires "0" "expr=%{REQUEST_URI} =~ m#^/$# || %{REQUEST_URI} =~ m#\.php$#"
