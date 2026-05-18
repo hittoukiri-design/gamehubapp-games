@@ -98,6 +98,24 @@ img, svg { display: block; max-width: 100%; }
   white-space: nowrap;
 }
 
+.brand-logo {
+  display: block;
+  width: min(224px, 34vw);
+  height: auto;
+  max-height: 58px;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 22px rgba(0, 0, 0, .35));
+}
+
+.footer-logo-link {
+  align-items: flex-start;
+}
+
+.footer-logo {
+  width: min(260px, 70vw);
+  max-height: 90px;
+}
+
 .brand-mark {
   display: grid;
   place-items: center;
@@ -911,6 +929,67 @@ h1 span {
   margin-bottom: 18px;
 }
 
+.admin-visit-panel {
+  border-color: rgba(22, 167, 101, .28);
+  background:
+    radial-gradient(circle at top left, rgba(22, 167, 101, .18), transparent 34%),
+    linear-gradient(135deg, rgba(15, 163, 127, .10), rgba(8, 20, 38, .94));
+}
+
+.admin-pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(22, 167, 101, .35);
+  color: var(--green);
+  background: rgba(22, 167, 101, .10);
+  font-weight: 800;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+.admin-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.admin-stat-card {
+  min-height: 132px;
+  padding: 18px;
+  border-radius: 18px;
+  border: 1px solid rgba(244, 201, 93, .14);
+  background: rgba(7, 17, 31, .72);
+}
+
+.admin-stat-card span,
+.admin-stat-card small,
+.admin-note {
+  color: rgba(248, 243, 232, .70);
+}
+
+.admin-stat-card strong {
+  display: block;
+  margin-top: 8px;
+  font-size: clamp(24px, 3vw, 40px);
+  line-height: 1.05;
+  color: var(--ivory);
+  overflow-wrap: anywhere;
+}
+
+.admin-stat-card small {
+  display: block;
+  margin-top: 8px;
+  text-transform: capitalize;
+}
+
+.admin-note {
+  margin: 16px 0 0;
+}
+
 .footer-brand p,
 .note-box p {
   color: rgba(248,243,232,.74);
@@ -1019,6 +1098,10 @@ h1 span {
   .nav-actions { display: none; }
   .brand { font-size: 19px; }
   .brand-mark { width: 40px; height: 32px; }
+  .brand-logo {
+    width: min(172px, 52vw);
+    max-height: 46px;
+  }
   .section-frame,
   .section-panel,
   .site-footer {
@@ -1304,5 +1387,9 @@ img.thumb {
   .category-card,
   .article-card {
     min-height: 190px;
+  }
+
+  .admin-stat-grid {
+    grid-template-columns: 1fr;
   }
 }

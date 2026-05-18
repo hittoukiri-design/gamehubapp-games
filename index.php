@@ -1,3 +1,51 @@
+<?php
+date_default_timezone_set('Asia/Makassar');
+
+$isYwagAdmin = isset($_GET['ywag_admin']) && $_GET['ywag_admin'] === '1';
+$visitStatsPath = __DIR__ . '/assets/data/ywag-visits.json';
+$todayKey = date('Y-m-d');
+$visitStats = [
+  'total' => 0,
+  'today' => [],
+  'devices' => ['mobile' => 0, 'desktop' => 0],
+  'last_visit' => null,
+  'last_device' => null,
+];
+
+if (is_file($visitStatsPath)) {
+  $loadedStats = json_decode((string) file_get_contents($visitStatsPath), true);
+  if (is_array($loadedStats)) {
+    $visitStats = array_replace_recursive($visitStats, $loadedStats);
+  }
+}
+
+$isMobileVisit = preg_match('/Android|iPhone|iPad|iPod|Mobile/i', $_SERVER['HTTP_USER_AGENT'] ?? '') === 1;
+$visitDevice = $isMobileVisit ? 'mobile' : 'desktop';
+
+if (!$isYwagAdmin && empty($_COOKIE['ywag_visit_seen'])) {
+  $visitStats['total'] = (int) ($visitStats['total'] ?? 0) + 1;
+  $visitStats['today'][$todayKey] = (int) ($visitStats['today'][$todayKey] ?? 0) + 1;
+  $visitStats['devices'][$visitDevice] = (int) ($visitStats['devices'][$visitDevice] ?? 0) + 1;
+  $visitStats['last_visit'] = date('Y-m-d H:i:s');
+  $visitStats['last_device'] = $visitDevice;
+
+  if (!is_dir(dirname($visitStatsPath))) {
+    mkdir(dirname($visitStatsPath), 0755, true);
+  }
+  file_put_contents($visitStatsPath, json_encode($visitStats, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES), LOCK_EX);
+  setcookie('ywag_visit_seen', '1', [
+    'expires' => time() + 21600,
+    'path' => '/',
+    'secure' => (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off'),
+    'httponly' => true,
+    'samesite' => 'Lax',
+  ]);
+}
+
+$todayVisits = (int) ($visitStats['today'][$todayKey] ?? 0);
+$mobileVisits = (int) ($visitStats['devices']['mobile'] ?? 0);
+$desktopVisits = (int) ($visitStats['devices']['desktop'] ?? 0);
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -5,7 +53,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Yaarwin Games | Cricket Culture & Trending Game Guides for India</title>
   <meta name="description" content="Explore cricket culture, trending game guides, popular card classics, quick-play formats, and responsible entertainment insights for Indian users.">
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="<?= $isYwagAdmin ? 'noindex, nofollow' : 'index, follow' ?>">
   <link rel="canonical" href="https://yaarwinapp.games/">
   <meta property="og:title" content="Yaarwin Games | Cricket Culture & Trending Game Guides for India">
   <meta property="og:description" content="Explore cricket culture, trending game guides, popular card classics, quick-play formats, and responsible entertainment insights for Indian users.">
@@ -28,7 +76,7 @@
       "@type": "Organization",
       "name": "Yaarwin Games",
       "url": "https://yaarwinapp.games/",
-      "logo": "https://yaarwinapp.games/assets/img/favicon.svg"
+      "logo": "https://yaarwinapp.games/assets/img/yaarwin-games-logo.png"
     }
   }
   </script>
@@ -39,8 +87,7 @@
   <header class="site-header" id="top">
     <nav class="nav-shell" aria-label="Primary navigation">
       <a class="brand" href="/" aria-label="Yaarwin Games home">
-        <span class="brand-mark" aria-hidden="true">YG</span>
-        <span>Yaarwin Games</span>
+        <img class="brand-logo" src="/assets/img/yaarwin-games-logo.png?v=<?= time() ?>" alt="Yaarwin Games" width="224" height="90">
       </a>
       <button class="menu-toggle" type="button" aria-controls="primary-menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -247,13 +294,48 @@
         <article><span>✅</span><h3>Clear Reviews</h3><p>Honest opinions for smarter decisions.</p></article>
       </div>
     </section>
+
+    <?php if ($isYwagAdmin): ?>
+    <section class="admin-visit-panel section-panel" aria-label="Private Yaarwin Games visit counter">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Private Analytics</p>
+          <h2>Yaarwin Games Visit Counter</h2>
+        </div>
+        <span class="admin-pill">Admin only</span>
+      </div>
+      <div class="admin-stat-grid">
+        <article class="admin-stat-card">
+          <span>Total visits</span>
+          <strong><?= number_format((int) ($visitStats['total'] ?? 0)) ?></strong>
+        </article>
+        <article class="admin-stat-card">
+          <span>Today</span>
+          <strong><?= number_format($todayVisits) ?></strong>
+        </article>
+        <article class="admin-stat-card">
+          <span>Mobile</span>
+          <strong><?= number_format($mobileVisits) ?></strong>
+        </article>
+        <article class="admin-stat-card">
+          <span>Desktop</span>
+          <strong><?= number_format($desktopVisits) ?></strong>
+        </article>
+        <article class="admin-stat-card">
+          <span>Last visit</span>
+          <strong><?= htmlspecialchars((string) ($visitStats['last_visit'] ?? 'No visits yet'), ENT_QUOTES, 'UTF-8') ?></strong>
+          <small><?= htmlspecialchars((string) ($visitStats['last_device'] ?? 'unknown'), ENT_QUOTES, 'UTF-8') ?></small>
+        </article>
+      </div>
+      <p class="admin-note">This private panel is hidden from public visitors. Opening the admin URL does not increase the visit count.</p>
+    </section>
+    <?php endif; ?>
   </main>
 
   <footer class="site-footer">
     <div class="footer-brand">
-      <a class="brand" href="#top">
-        <span class="brand-mark" aria-hidden="true">YG</span>
-        <span>Yaarwin Games</span>
+      <a class="brand footer-logo-link" href="#top" aria-label="Yaarwin Games home">
+        <img class="brand-logo footer-logo" src="/assets/img/yaarwin-games-logo.png?v=<?= time() ?>" alt="Yaarwin Games" width="260" height="105">
       </a>
       <p>Your independent hub for cricket culture, trending games & digital entertainment content — made for India.</p>
       <div class="socials" aria-label="Social links">
