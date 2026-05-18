@@ -123,6 +123,7 @@ if (!function_exists('esc')) {
         <span></span><span></span><span></span>
       </button>
       <div class="nav-links" id="primary-menu">
+        <a href="/">Home</a>
         <a href="#cricket">Cricket</a>
         <a href="#trending">Trending Games</a>
         <a href="#guides">Guides</a>
@@ -213,24 +214,24 @@ if (!function_exists('esc')) {
       </div>
       <aside class="scoreboard" aria-label="Sample editorial cricket dashboard">
         <div class="score-top">
-          <span class="live-badge">Live</span>
+          <span class="live-badge">Latest</span>
           <span>IPL 2026</span>
-          <span>Match 45</span>
-          <span>Live from Bengaluru</span>
+          <span>Match 63</span>
+          <span>Chennai, May 18</span>
         </div>
         <div class="score-team">
-          <div><span class="team-badge mumbai">MW</span><strong>Mumbai Warriors</strong></div>
-          <div><strong>186/5</strong><small>20 Overs</small></div>
+          <div><span class="team-badge mumbai">CSK</span><strong>Chennai Super Kings</strong></div>
+          <div><strong>180/7</strong><small>20 Overs</small></div>
         </div>
         <div class="score-team">
-          <div><span class="team-badge chennai">CK</span><strong>Chennai Kings</strong></div>
-          <div><strong>179/7</strong><small>20 Overs</small></div>
+          <div><span class="team-badge chennai">SRH</span><strong>Sunrisers Hyderabad</strong></div>
+          <div><strong>181/5</strong><small>19 Overs</small></div>
         </div>
-        <p class="result-bar">Mumbai Warriors won by 7 runs</p>
+        <p class="result-bar">Sunrisers Hyderabad won by 5 wickets</p>
         <div class="score-stats">
-          <div><small>Top Batsman</small><strong>S. Iyer</strong><span>78 (45)</span></div>
-          <div><small>Top Bowler</small><strong>J. Bumrah</strong><span>3/28 (4)</span></div>
-          <div><small>Partnership</small><strong>Iyer & Kishan</strong><span>89 (56)</span></div>
+          <div><small>Top Batsman</small><strong>Ishan Kishan</strong><span>70 for SRH</span></div>
+          <div><small>Next Match</small><strong>RR vs LSG</strong><span>May 19, 7:30 PM IST</span></div>
+          <div><small>Watchlist</small><strong>KKR vs MI</strong><span>May 20, 7:30 PM IST</span></div>
         </div>
       </aside>
     </section>

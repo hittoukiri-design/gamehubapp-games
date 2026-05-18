@@ -245,17 +245,17 @@ $guides = [
     'thumb' => 'live',
     'keywords' => ['live match hub', 'live cricket guide', 'cricket score context', 'match insights India'],
     'intro' => [
-      'A live match hub should do more than flash numbers. The best version brings together the current score, venue, momentum, key players, and what changed since the last update.',
-      'That richer view matters because Indian cricket users often check a match in fragments throughout the day. A useful hub helps them re-enter the story quickly instead of forcing them to reconstruct it from scratch.',
+      'A live match hub should do more than flash numbers. The latest IPL 2026 note is CSK 180/7 against SRH 181/5 on May 18, with Sunrisers Hyderabad winning by 5 wickets in Chennai.',
+      'The next watchlist starts with RR vs LSG on May 19, followed by KKR vs MI on May 20 and GT vs CSK on May 21. A useful hub helps Indian cricket users re-enter the story quickly instead of forcing them to reconstruct it from scratch.',
     ],
     'sections' => [
       [
         'heading' => 'What belongs in a strong match hub',
         'items' => [
-          'Current score and overs.',
-          'Match status and venue.',
-          'Top performer notes.',
-          'Latest result recap.',
+          'Latest result: CSK 180/7, SRH 181/5 in 19 overs.',
+          'Result status: Sunrisers Hyderabad won by 5 wickets.',
+          'Next fixture: RR vs LSG, May 19 at 7:30 PM IST.',
+          'Upcoming watchlist: KKR vs MI and GT vs CSK.',
           'Links to previews, recaps, and related cricket guides.',
         ],
       ],
@@ -560,4 +560,3 @@ $article_cards = [
   ['type' => 'Game Guide', 'slug' => 'beginners-guide-to-andar-bahar'],
   ['type' => 'Cricket Buzz', 'slug' => 'ipl-2026-key-matches'],
 ];
-

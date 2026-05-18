@@ -46,6 +46,7 @@ if (!function_exists('esc')) {
         <span></span><span></span><span></span>
       </button>
       <div class="nav-links" id="primary-menu">
+        <a href="/">Home</a>
         <a href="/#cricket">Cricket</a>
         <a href="/#trending">Trending Games</a>
         <a href="/guides/">Guides</a>
