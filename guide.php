@@ -1,14 +1,18 @@
 <?php
 require __DIR__ . '/guide-data.php';
 
-function asset_url(string $path): string {
-  $fullPath = __DIR__ . $path;
-  $version = is_file($fullPath) ? (string) filemtime($fullPath) : '1';
-  return $path . '?v=' . $version;
+if (!function_exists('asset_url')) {
+  function asset_url(string $path): string {
+    $fullPath = __DIR__ . $path;
+    $version = is_file($fullPath) ? (string) filemtime($fullPath) : '1';
+    return $path . '?v=' . $version;
+  }
 }
 
-function esc(string $value): string {
-  return htmlspecialchars($value, ENT_QUOTES, 'UTF-8');
+if (!function_exists('esc')) {
+  function esc(string $value): string {
+    return htmlspecialchars($value, ENT_QUOTES, 'UTF-8');
+  }
 }
 
 $slug = preg_replace('/[^a-z0-9-]/', '', $_GET['slug'] ?? '');

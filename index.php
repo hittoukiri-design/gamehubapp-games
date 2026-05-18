@@ -1,5 +1,17 @@
 <?php
 date_default_timezone_set('Asia/Makassar');
+
+$requestPath = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?: '/';
+if ($requestPath === '/guides' || $requestPath === '/guides/') {
+  require __DIR__ . '/guides.php';
+  exit;
+}
+if (preg_match('#^/guides/([a-z0-9-]+)/?$#', $requestPath, $guideMatch)) {
+  $_GET['slug'] = $guideMatch[1];
+  require __DIR__ . '/guide.php';
+  exit;
+}
+
 require __DIR__ . '/guide-data.php';
 
 $isYwagAdmin = isset($_GET['ywag_admin']) && $_GET['ywag_admin'] === '1';
@@ -47,14 +59,18 @@ $todayVisits = (int) ($visitStats['today'][$todayKey] ?? 0);
 $mobileVisits = (int) ($visitStats['devices']['mobile'] ?? 0);
 $desktopVisits = (int) ($visitStats['devices']['desktop'] ?? 0);
 
-function asset_url(string $path): string {
-  $fullPath = __DIR__ . $path;
-  $version = is_file($fullPath) ? (string) filemtime($fullPath) : '1';
-  return $path . '?v=' . $version;
+if (!function_exists('asset_url')) {
+  function asset_url(string $path): string {
+    $fullPath = __DIR__ . $path;
+    $version = is_file($fullPath) ? (string) filemtime($fullPath) : '1';
+    return $path . '?v=' . $version;
+  }
 }
 
-function esc(string $value): string {
-  return htmlspecialchars($value, ENT_QUOTES, 'UTF-8');
+if (!function_exists('esc')) {
+  function esc(string $value): string {
+    return htmlspecialchars($value, ENT_QUOTES, 'UTF-8');
+  }
 }
 ?>
 <!doctype html>
@@ -170,7 +186,7 @@ function esc(string $value): string {
             $catSlug = preg_replace('/[^a-z0-9_-]/', '', $cat['thumb']);
         ?>
         <a class="category-card" href="/guides/<?= esc($cat['slug']) ?>/">
-          <div class="card-art <?= esc($catSlug) ?>" role="img" aria-label="<?= esc($cat[0]) ?> illustration">
+          <div class="card-art <?= esc($catSlug) ?>" role="img" aria-label="<?= esc($cat['title']) ?> illustration">
             <img src="<?= esc(asset_url('/assets/img/thumb_' . $catSlug . '.webp')) ?>" alt="" loading="lazy" decoding="async" width="640" height="360">
           </div>
           <div class="card-content">
