@@ -5,6 +5,8 @@ DirectoryIndex index.php index.html
   RewriteEngine On
   RewriteCond %{HTTPS} !=on
   RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+  RewriteRule ^guides/?$ guides.php [L,QSA]
+  RewriteRule ^guides/([a-z0-9-]+)/?$ guide.php?slug=$1 [L,QSA]
 </IfModule>
 
 <IfModule mod_headers.c>
@@ -16,5 +18,15 @@ DirectoryIndex index.php index.html
   Header set Cache-Control "no-cache, no-store, must-revalidate" "expr=%{REQUEST_URI} =~ m#^/$# || %{REQUEST_URI} =~ m#\.php$#"
   Header set Pragma "no-cache" "expr=%{REQUEST_URI} =~ m#^/$# || %{REQUEST_URI} =~ m#\.php$#"
   Header set Expires "0" "expr=%{REQUEST_URI} =~ m#^/$# || %{REQUEST_URI} =~ m#\.php$#"
-  Header set Cache-Control "public, max-age=2592000, immutable" "expr=%{REQUEST_URI} =~ m#\.(?:css|js|webp|png|jpg|jpeg|svg|ico|woff2?)$#"
+  Header set Cache-Control "public, max-age=31536000, immutable" "expr=%{REQUEST_URI} =~ m#\.(?:css|js|webp|png|jpg|jpeg|svg|ico|woff2?)$#"
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
 </IfModule>

@@ -1,5 +1,6 @@
 <?php
 date_default_timezone_set('Asia/Makassar');
+require __DIR__ . '/guide-data.php';
 
 $isYwagAdmin = isset($_GET['ywag_admin']) && $_GET['ywag_admin'] === '1';
 $visitStatsPath = __DIR__ . '/assets/data/ywag-visits.json';
@@ -45,6 +46,16 @@ if (!$isYwagAdmin && empty($_COOKIE['ywag_visit_seen'])) {
 $todayVisits = (int) ($visitStats['today'][$todayKey] ?? 0);
 $mobileVisits = (int) ($visitStats['devices']['mobile'] ?? 0);
 $desktopVisits = (int) ($visitStats['devices']['desktop'] ?? 0);
+
+function asset_url(string $path): string {
+  $fullPath = __DIR__ . $path;
+  $version = is_file($fullPath) ? (string) filemtime($fullPath) : '1';
+  return $path . '?v=' . $version;
+}
+
+function esc(string $value): string {
+  return htmlspecialchars($value, ENT_QUOTES, 'UTF-8');
+}
 ?>
 <!doctype html>
 <html lang="en">
@@ -62,8 +73,11 @@ $desktopVisits = (int) ($visitStats['devices']['desktop'] ?? 0);
   <meta property="og:site_name" content="Yaarwin Games">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#07111F">
-  <link rel="icon" href="/assets/img/favicon.png?v=<?= time() ?>" type="image/png">
-  <link rel="stylesheet" href="/assets/css/styles.css?v=<?= time() ?>">
+  <link rel="icon" href="<?= esc(asset_url('/assets/img/favicon.png')) ?>" type="image/png">
+  <link rel="preload" href="<?= esc(asset_url('/assets/img/hero_bg.webp')) ?>" as="image" fetchpriority="high">
+  <link rel="preload" href="<?= esc(asset_url('/assets/img/bat_ball_transparent.webp')) ?>" as="image" fetchpriority="high">
+  <link rel="preload" href="<?= esc(asset_url('/assets/css/styles.css')) ?>" as="style">
+  <link rel="stylesheet" href="<?= esc(asset_url('/assets/css/styles.css')) ?>">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -76,7 +90,7 @@ $desktopVisits = (int) ($visitStats['devices']['desktop'] ?? 0);
       "@type": "Organization",
       "name": "Yaarwin Games",
       "url": "https://yaarwinapp.games/",
-      "logo": "https://yaarwinapp.games/assets/img/yaarwin-games-logo.png"
+      "logo": "https://yaarwinapp.games/assets/img/yaarwin-games-logo.webp"
     }
   }
   </script>
@@ -87,7 +101,7 @@ $desktopVisits = (int) ($visitStats['devices']['desktop'] ?? 0);
   <header class="site-header" id="top">
     <nav class="nav-shell" aria-label="Primary navigation">
       <a class="brand" href="/" aria-label="Yaarwin Games home">
-        <img class="brand-logo" src="/assets/img/yaarwin-games-logo.png?v=<?= time() ?>" alt="Yaarwin Games" width="224" height="90">
+        <img class="brand-logo" src="<?= esc(asset_url('/assets/img/yaarwin-games-logo.webp')) ?>" alt="Yaarwin Games" width="224" height="90" decoding="async">
       </a>
       <button class="menu-toggle" type="button" aria-controls="primary-menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -129,33 +143,15 @@ $desktopVisits = (int) ($visitStats['devices']['desktop'] ?? 0);
       </div>
       <div class="hero-visual" aria-label="Cricket bat, ball and guide cards">
         <div class="bat-ball-art" aria-hidden="true">
-          <img src="/assets/img/bat_ball_transparent.png?v=<?= time() ?>" class="bat-img" alt="Cricket Bat and Ball">
+          <img src="<?= esc(asset_url('/assets/img/bat_ball_transparent.webp')) ?>" class="bat-img" alt="Cricket Bat and Ball" width="420" height="900" fetchpriority="high" decoding="async">
         </div>
         <div class="floating-cards">
-          <article class="float-card green">
-            <div class="card-text"><h3>Cricket</h3><p>Live scores, news & match insights</p></div>
-            <img src="/assets/img/thumb_cricket.png?v=<?= time() ?>" alt="Cricket" class="thumb" loading="lazy">
-          </article>
-          <article class="float-card purple">
-            <div class="card-text"><h3>Teen Patti</h3><p>Classic card game loved in India</p></div>
-            <img src="/assets/img/thumb_teen.png?v=<?= time() ?>" alt="Teen Patti" class="thumb" loading="lazy">
-          </article>
-          <article class="float-card saffron">
-            <div class="card-text"><h3>Rummy</h3><p>Skill-based fun for all players</p></div>
-            <img src="/assets/img/thumb_rummy.png?v=<?= time() ?>" alt="Rummy" class="thumb" loading="lazy">
-          </article>
-          <article class="float-card blue">
-            <div class="card-text"><h3>Quick Play</h3><p>Fast games, short & exciting</p></div>
-            <img src="/assets/img/thumb_aviator.png?v=<?= time() ?>" alt="Quick Play" class="thumb" loading="lazy">
-          </article>
-          <article class="float-card gold">
-            <div class="card-text"><h3>Fan Picks</h3><p>Popular games users love</p></div>
-            <img src="/assets/img/thumb_wingo.png?v=<?= time() ?>" alt="Fan Picks" class="thumb" loading="lazy">
-          </article>
-          <article class="float-card violet">
-            <div class="card-text"><h3>Live Match Hub</h3><p>Scores, stats & highlights</p></div>
-            <img src="/assets/img/thumb_live.png?v=<?= time() ?>" alt="Live Match Hub" class="thumb" loading="lazy">
-          </article>
+          <?php foreach ($hero_cards as $card): ?>
+            <a class="float-card <?= esc($card['tone']) ?>" href="/guides/<?= esc($card['slug']) ?>/">
+              <div class="card-text"><h3><?= esc($card['title']) ?></h3><p><?= esc($card['copy']) ?></p></div>
+              <img src="<?= esc(asset_url('/assets/img/thumb_' . $card['thumb'] . '.webp')) ?>" alt="<?= esc($card['title']) ?>" class="thumb" width="120" height="76" decoding="async">
+            </a>
+          <?php endforeach; ?>
         </div>
       </div>
     </section>
@@ -166,32 +162,23 @@ $desktopVisits = (int) ($visitStats['devices']['desktop'] ?? 0);
           <p class="accent-line"></p>
           <h2>Trending in India Right Now</h2>
         </div>
-        <a class="btn btn-small" href="#guides">View All Categories</a>
+        <a class="btn btn-small" href="/guides/">View All Categories</a>
       </div>
       <div class="category-grid">
         <?php
-          $categories = [
-            ['Cricket Games', 'Dive into cricket fantasy, trivia & skill challenges.', 'cricket'],
-            ['Teen Patti', 'The classic card game loved across India.', 'teen'],
-            ['Rummy', 'Strategic gameplay with timeless appeal.', 'rummy'],
-            ['Aviator-style Casual Play', 'Fast-paced fun with simple, exciting play.', 'aviator'],
-            ['Wingo-style Quick Play', 'Quick rounds, easy to learn & enjoy.', 'wingo'],
-            ['Andar Bahar', 'A classic face-off you’ll always enjoy.', 'andar'],
-            ['Live Match Hub', 'Live scores, match insights & highlights.', 'live'],
-            ['Strategy Games', 'Test your mind with smart strategies.', 'strategy'],
-          ];
-          foreach ($categories as $cat):
+          foreach ($category_cards as $cat):
+            $catSlug = preg_replace('/[^a-z0-9_-]/', '', $cat['thumb']);
         ?>
-        <article class="category-card">
-          <div class="card-art <?= htmlspecialchars($cat[2], ENT_QUOTES) ?>" role="img" aria-label="<?= htmlspecialchars($cat[0], ENT_QUOTES) ?> illustration">
-            <img src="/assets/img/thumb_<?= htmlspecialchars($cat[2], ENT_QUOTES) ?>.png" alt="" loading="lazy">
+        <a class="category-card" href="/guides/<?= esc($cat['slug']) ?>/">
+          <div class="card-art <?= esc($catSlug) ?>" role="img" aria-label="<?= esc($cat[0]) ?> illustration">
+            <img src="<?= esc(asset_url('/assets/img/thumb_' . $catSlug . '.webp')) ?>" alt="" loading="lazy" decoding="async" width="640" height="360">
           </div>
           <div class="card-content">
-            <h3><?= htmlspecialchars($cat[0]) ?></h3>
-            <p><?= htmlspecialchars($cat[1]) ?></p>
+            <h3><?= esc($cat['title']) ?></h3>
+            <p><?= esc($cat['copy']) ?></p>
             <span class="arrow" aria-hidden="true">→</span>
           </div>
-        </article>
+        </a>
         <?php endforeach; ?>
       </div>
     </section>
@@ -254,30 +241,25 @@ $desktopVisits = (int) ($visitStats['devices']['desktop'] ?? 0);
           <p class="accent-line"></p>
           <h2>Fresh Game Guides & Cricket Buzz</h2>
         </div>
-        <a class="btn btn-small" href="#blog">Read All Articles</a>
+        <a class="btn btn-small" href="/guides/">Read All Articles</a>
       </div>
       <div class="article-grid">
         <?php
-          $articles = [
-            ['Cricket Guides', 'Top 10 Tips to Improve Your Cricket Game', 'Simple techniques to take your gameplay to the next level.', 'May 15, 2026 • 5 min read', 'cricket'],
-            ['Game Guide', 'Teen Patti vs Rummy: What’s More Fun?', 'A quick comparison to help you choose your perfect game.', 'May 12, 2026 • 4 min read', 'teen'],
-            ['Trending', 'Why Quick-Play Games Are So Popular in India', 'Exploring the rise of short, exciting & skill-based play styles.', 'May 10, 2026 • 4 min read', 'aviator'],
-            ['Game Guide', 'Beginner’s Guide to Andar Bahar', 'Rules, tips & strategies for a better gaming experience.', 'May 8, 2026 • 6 min read', 'andar'],
-            ['Cricket Buzz', 'IPL 2026: Key Matches You Can’t Miss', 'Big clashes, top players & what to watch out for this season.', 'May 6, 2026 • 4 min read', 'live'],
-          ];
-          foreach ($articles as $article):
+          foreach ($article_cards as $article):
+            $guide = $guides[$article['slug']];
+            $articleSlug = preg_replace('/[^a-z0-9_-]/', '', $guide['thumb']);
         ?>
-        <article class="article-card">
-          <div class="article-art <?= htmlspecialchars($article[4], ENT_QUOTES) ?>" role="img" aria-label="<?= htmlspecialchars($article[1], ENT_QUOTES) ?> thumbnail">
-            <img src="/assets/img/thumb_<?= htmlspecialchars($article[4], ENT_QUOTES) ?>.png" alt="" loading="lazy">
+        <a class="article-card" href="/guides/<?= esc($article['slug']) ?>/">
+          <div class="article-art <?= esc($articleSlug) ?>" role="img" aria-label="<?= esc($guide['title']) ?> thumbnail">
+            <img src="<?= esc(asset_url('/assets/img/thumb_' . $articleSlug . '.webp')) ?>" alt="" loading="lazy" decoding="async" width="640" height="360">
           </div>
           <div class="article-body">
-            <span class="badge"><?= htmlspecialchars($article[0]) ?></span>
-            <h3><?= htmlspecialchars($article[1]) ?></h3>
-            <p><?= htmlspecialchars($article[2]) ?></p>
-            <small><?= htmlspecialchars($article[3]) ?></small>
+            <span class="badge"><?= esc($article['type']) ?></span>
+            <h3><?= esc($guide['title']) ?></h3>
+            <p><?= esc($guide['excerpt']) ?></p>
+            <small><?= esc($article['slug'] === 'top-10-cricket-tips' ? 'May 15, 2026 • 5 min read' : ($article['slug'] === 'teen-patti-vs-rummy' ? 'May 12, 2026 • 4 min read' : ($article['slug'] === 'why-quick-play-games-are-popular-in-india' ? 'May 10, 2026 • 4 min read' : ($article['slug'] === 'beginners-guide-to-andar-bahar' ? 'May 8, 2026 • 6 min read' : 'May 6, 2026 • 4 min read')))) ?></small>
           </div>
-        </article>
+        </a>
         <?php endforeach; ?>
       </div>
     </section>
@@ -323,8 +305,8 @@ $desktopVisits = (int) ($visitStats['devices']['desktop'] ?? 0);
         </article>
         <article class="admin-stat-card">
           <span>Last visit</span>
-          <strong><?= htmlspecialchars((string) ($visitStats['last_visit'] ?? 'No visits yet'), ENT_QUOTES, 'UTF-8') ?></strong>
-          <small><?= htmlspecialchars((string) ($visitStats['last_device'] ?? 'unknown'), ENT_QUOTES, 'UTF-8') ?></small>
+          <strong><?= esc((string) ($visitStats['last_visit'] ?? 'No visits yet')) ?></strong>
+          <small><?= esc((string) ($visitStats['last_device'] ?? 'unknown')) ?></small>
         </article>
       </div>
       <p class="admin-note">This private panel is hidden from public visitors. Opening the admin URL does not increase the visit count.</p>
@@ -335,7 +317,7 @@ $desktopVisits = (int) ($visitStats['devices']['desktop'] ?? 0);
   <footer class="site-footer">
     <div class="footer-brand">
       <a class="brand footer-logo-link" href="#top" aria-label="Yaarwin Games home">
-        <img class="brand-logo footer-logo" src="/assets/img/yaarwin-games-logo.png?v=<?= time() ?>" alt="Yaarwin Games" width="260" height="105">
+        <img class="brand-logo footer-logo" src="<?= esc(asset_url('/assets/img/yaarwin-games-logo.webp')) ?>" alt="Yaarwin Games" width="260" height="105" loading="lazy" decoding="async">
       </a>
       <p>Your independent hub for cricket culture, trending games & digital entertainment content — made for India.</p>
       <div class="socials" aria-label="Social links">
@@ -371,6 +353,6 @@ $desktopVisits = (int) ($visitStats['devices']['desktop'] ?? 0);
     </div>
     <p class="copyright">© 2026 Yaarwin Games. All rights reserved.</p>
   </footer>
-  <script src="/assets/js/site.js" defer></script>
+  <script src="<?= esc(asset_url('/assets/js/site.js')) ?>" defer></script>
 </body>
 </html>
