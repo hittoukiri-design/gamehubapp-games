@@ -72,6 +72,194 @@ if (!function_exists('esc')) {
     return htmlspecialchars($value, ENT_QUOTES, 'UTF-8');
   }
 }
+
+$schemaBaseUrl = 'https://yaarwinapp.games';
+$schemaLogoUrl = $schemaBaseUrl . '/assets/img/yaarwin-games-logo.webp';
+$schemaGuideItems = [];
+foreach (array_slice($article_cards, 0, 8) as $position => $article) {
+  $guide = $guides[$article['slug']] ?? null;
+  if (!$guide) {
+    continue;
+  }
+  $schemaGuideItems[] = [
+    '@type' => 'ListItem',
+    'position' => $position + 1,
+    'name' => $guide['title'],
+    'url' => $schemaBaseUrl . '/guides/' . $article['slug'] . '/',
+  ];
+}
+$schemaCategoryItems = [];
+foreach (array_slice($category_cards, 0, 8) as $position => $category) {
+  $schemaCategoryItems[] = [
+    '@type' => 'ListItem',
+    'position' => $position + 1,
+    'name' => $category['title'],
+    'url' => $schemaBaseUrl . '/guides/' . $category['slug'] . '/',
+  ];
+}
+$homepageSchema = [
+  '@context' => 'https://schema.org',
+  '@graph' => [
+    [
+      '@type' => 'WebSite',
+      '@id' => $schemaBaseUrl . '/#website',
+      'name' => 'Yaarwin Games',
+      'alternateName' => ['Yaarwin Games India', 'Yaarwin Cricket Games', 'Yaarwin Game Guides'],
+      'url' => $schemaBaseUrl . '/',
+      'inLanguage' => 'en-IN',
+      'description' => 'Yaarwin Games is an India-focused cricket culture and game guide hub covering live cricket context, Teen Patti, Rummy, Andar Bahar, quick-play formats, strategy guides and responsible play reminders.',
+      'publisher' => ['@id' => $schemaBaseUrl . '/#organization'],
+    ],
+    [
+      '@type' => 'Organization',
+      '@id' => $schemaBaseUrl . '/#organization',
+      'name' => 'Yaarwin Games',
+      'url' => $schemaBaseUrl . '/',
+      'logo' => [
+        '@type' => 'ImageObject',
+        'url' => $schemaLogoUrl,
+        'width' => 260,
+        'height' => 105,
+      ],
+      'image' => $schemaLogoUrl,
+      'description' => 'Yaarwin Games publishes mobile-friendly cricket culture updates, game guides, card game explainers, quick-play overviews and responsible entertainment notes for Indian users.',
+    ],
+    [
+      '@type' => 'BreadcrumbList',
+      '@id' => $schemaBaseUrl . '/#breadcrumb',
+      'itemListElement' => [
+        [
+          '@type' => 'ListItem',
+          'position' => 1,
+          'name' => 'Home',
+          'item' => $schemaBaseUrl . '/',
+        ],
+      ],
+    ],
+    [
+      '@type' => ['WebApplication', 'SoftwareApplication'],
+      '@id' => $schemaBaseUrl . '/#webapp',
+      'name' => 'Yaarwin Games Guide Hub',
+      'url' => $schemaBaseUrl . '/',
+      'applicationCategory' => 'GameApplication',
+      'operatingSystem' => 'Android, iOS, Web',
+      'browserRequirements' => 'Requires a modern mobile or desktop browser.',
+      'description' => 'A mobile-first guide hub for cricket culture, live score context, Indian card classics, quick-play guides, strategy articles and safer entertainment habits.',
+      'image' => $schemaLogoUrl,
+      'publisher' => ['@id' => $schemaBaseUrl . '/#organization'],
+      'offers' => [
+        '@type' => 'Offer',
+        'price' => '0',
+        'priceCurrency' => 'INR',
+      ],
+      'audience' => [
+        '@type' => 'Audience',
+        'audienceType' => 'Indian users interested in cricket culture and game guide content',
+      ],
+      'featureList' => [
+        'Cricket games India guide',
+        'Live match hub and IPL score context',
+        'Teen Patti and Rummy guide articles',
+        'Andar Bahar beginner guide',
+        'Quick-play and strategy game explainers',
+        'Responsible play reminders',
+      ],
+    ],
+    [
+      '@type' => 'Article',
+      '@id' => $schemaBaseUrl . '/#homepage-article',
+      'headline' => 'Yaarwin Games India Cricket Culture and Game Guide Hub',
+      'description' => 'Explore Yaarwin Games guides for cricket culture, live match context, IPL 2026 updates, Teen Patti, Rummy, Andar Bahar, quick-play formats and responsible entertainment habits.',
+      'url' => $schemaBaseUrl . '/',
+      'mainEntityOfPage' => [
+        '@type' => 'WebPage',
+        '@id' => $schemaBaseUrl . '/',
+      ],
+      'image' => [
+        '@type' => 'ImageObject',
+        'url' => $schemaBaseUrl . '/assets/img/hero_bg.webp',
+        'width' => 1600,
+        'height' => 900,
+      ],
+      'author' => [
+        '@type' => 'Organization',
+        'name' => 'Yaarwin Games Editorial Team',
+        'url' => $schemaBaseUrl . '/',
+      ],
+      'publisher' => ['@id' => $schemaBaseUrl . '/#organization'],
+      'datePublished' => '2026-05-18T00:00:00+08:00',
+      'dateModified' => '2026-05-19T03:45:00+08:00',
+      'inLanguage' => 'en-IN',
+      'about' => [
+        'cricket games India',
+        'IPL 2026 live score context',
+        'Teen Patti guide India',
+        'Rummy guide India',
+        'Andar Bahar guide India',
+        'quick-play games India',
+        'responsible play India',
+      ],
+    ],
+    [
+      '@type' => 'ItemList',
+      '@id' => $schemaBaseUrl . '/#trending-category-list',
+      'name' => 'Trending Yaarwin Games India Categories',
+      'itemListElement' => $schemaCategoryItems,
+    ],
+    [
+      '@type' => 'ItemList',
+      '@id' => $schemaBaseUrl . '/#latest-guide-list',
+      'name' => 'Fresh Yaarwin Games and Cricket Guides',
+      'itemListElement' => $schemaGuideItems,
+    ],
+    [
+      '@type' => 'FAQPage',
+      '@id' => $schemaBaseUrl . '/#faq',
+      'mainEntity' => [
+        [
+          '@type' => 'Question',
+          'name' => 'What is Yaarwin Games?',
+          'acceptedAnswer' => [
+            '@type' => 'Answer',
+            'text' => 'Yaarwin Games is an India-focused cricket culture and game information hub with guides for cricket context, Teen Patti, Rummy, Andar Bahar, quick-play formats and responsible entertainment habits.',
+          ],
+        ],
+        [
+          '@type' => 'Question',
+          'name' => 'Does Yaarwin Games cover cricket updates?',
+          'acceptedAnswer' => [
+            '@type' => 'Answer',
+            'text' => 'Yes. The site covers cricket culture, IPL 2026 score context, live match hub guidance, upcoming match watchlists and cricket guide articles for Indian readers.',
+          ],
+        ],
+        [
+          '@type' => 'Question',
+          'name' => 'Which game guides are available?',
+          'acceptedAnswer' => [
+            '@type' => 'Answer',
+            'text' => 'Readers can explore guides for cricket games, Teen Patti, Rummy, Andar Bahar, Aviator-style quick play, Wingo-style quick play, strategy games and fan-favorite Indian game categories.',
+          ],
+        ],
+        [
+          '@type' => 'Question',
+          'name' => 'Is Yaarwin Games built for mobile users?',
+          'acceptedAnswer' => [
+            '@type' => 'Answer',
+            'text' => 'Yes. Yaarwin Games is designed as a mobile-first guide hub so Indian readers can scan cricket updates, game articles and safety notes comfortably on phone screens.',
+          ],
+        ],
+        [
+          '@type' => 'Question',
+          'name' => 'Does the site encourage responsible play?',
+          'acceptedAnswer' => [
+            '@type' => 'Answer',
+            'text' => 'Yes. The content focuses on informed choices, session limits, clearer game literacy and responsible entertainment reminders across cricket and game guide topics.',
+          ],
+        ],
+      ],
+    ],
+  ],
+];
 ?>
 <!doctype html>
 <html lang="en">
@@ -94,22 +282,7 @@ if (!function_exists('esc')) {
   <link rel="preload" href="<?= esc(asset_url('/assets/img/bat_ball_transparent.webp')) ?>" as="image" fetchpriority="high">
   <link rel="preload" href="<?= esc(asset_url('/assets/css/styles.css')) ?>" as="style">
   <link rel="stylesheet" href="<?= esc(asset_url('/assets/css/styles.css')) ?>">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Yaarwin Games",
-    "url": "https://yaarwinapp.games/",
-    "description": "Cricket culture, trending game guides, popular card classics, quick-play formats, and responsible entertainment insights for Indian users.",
-    "inLanguage": "en-IN",
-    "publisher": {
-      "@type": "Organization",
-      "name": "Yaarwin Games",
-      "url": "https://yaarwinapp.games/",
-      "logo": "https://yaarwinapp.games/assets/img/yaarwin-games-logo.webp"
-    }
-  }
-  </script>
+  <script type="application/ld+json" id="YaarwinGamesRichResultSchema"><?= json_encode($homepageSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) ?></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
