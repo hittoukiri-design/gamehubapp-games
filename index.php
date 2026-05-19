@@ -404,15 +404,15 @@ $homepageSchema = [
         </div>
         <div class="score-team">
           <div><span class="team-badge mumbai">LSG</span><strong>Lucknow Super Giants</strong></div>
-          <div><strong>220 target</strong><small>Set for RR</small></div>
+          <div><strong>220/5</strong><small>20 overs</small></div>
         </div>
         <div class="score-team">
           <div><span class="team-badge chennai">RR</span><strong>Rajasthan Royals</strong></div>
-          <div><strong>Chase</strong><small>Live context</small></div>
+          <div><strong>225/3</strong><small>19.1 overs</small></div>
         </div>
-        <p class="result-bar">RR vs LSG live note: Rajasthan chase 221 in Jaipur</p>
+        <p class="result-bar">Rajasthan Royals beat Lucknow Super Giants by 7 wickets</p>
         <div class="score-stats">
-          <div><small>Latest Note</small><strong>Target 221</strong><span>RR chase phase</span></div>
+          <div><small>Latest Result</small><strong>RR won</strong><span>May 19, Jaipur</span></div>
           <div><small>Next Match</small><strong>KKR vs MI</strong><span>May 20, 7:30 PM IST</span></div>
           <div><small>Watchlist</small><strong>GT vs CSK</strong><span>May 21, 7:30 PM IST</span></div>
         </div>

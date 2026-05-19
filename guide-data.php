@@ -11,7 +11,7 @@ $guides = [
     'keywords' => ['cricket games India', 'cricket guide India', 'live match hub', 'cricket culture India'],
     'intro' => [
       'Cricket is more than a sport in India. It shapes evening plans, group chats, fantasy debates, and the way many users discover new game guides online. This guide explains the basic formats, what to watch during a match, and how to read cricket content without getting lost in noise.',
-      'If you are new to cricket games in India, start with the match format, the score context, and the reason a player or team trend is moving. A calmer reading habit usually gives better understanding than chasing every update at once.',
+      'If you are new to cricket games in India, start with the match format, the score context, and the reason a player or team trend is moving. The latest IPL 2026 reference is Rajasthan Royals 225/3 beating Lucknow Super Giants 220/5 by 7 wickets on May 19, before the watchlist moves to KKR vs MI.',
     ],
     'sections' => [
       [
@@ -245,15 +245,15 @@ $guides = [
     'thumb' => 'live',
     'keywords' => ['live match hub', 'live cricket guide', 'cricket score context', 'match insights India'],
     'intro' => [
-      'A live match hub should do more than flash numbers. The latest IPL 2026 note is RR vs LSG on May 19, with Rajasthan chasing a 221 target after Lucknow set up the Jaipur run chase.',
+      'A live match hub should do more than flash numbers. The latest IPL 2026 result is RR vs LSG on May 19, where Rajasthan Royals reached 225/3 in 19.1 overs to beat Lucknow Super Giants 220/5 by 7 wickets in Jaipur.',
       'The next watchlist starts with KKR vs MI on May 20, followed by GT vs CSK on May 21 and SRH vs RCB on May 22. A useful hub helps Indian cricket users re-enter the story quickly instead of forcing them to reconstruct it from scratch.',
     ],
     'sections' => [
       [
         'heading' => 'What belongs in a strong match hub',
         'items' => [
-          'Latest live context: RR vs LSG, Rajasthan chase a 221 target in Jaipur.',
-          'Match note: keep score context separate from final result until the chase is complete.',
+          'Latest result: RR 225/3 beat LSG 220/5 by 7 wickets in Jaipur.',
+          'Match note: separate live chase context from final result once the score is confirmed.',
           'Next fixture: KKR vs MI, May 20 at 7:30 PM IST.',
           'Upcoming watchlist: GT vs CSK and SRH vs RCB.',
           'Links to previews, recaps, and related cricket guides.',
@@ -504,12 +504,13 @@ $guides = [
     'keywords' => ['IPL 2026 key matches', 'cricket buzz India', 'IPL guide', 'match preview India'],
     'intro' => [
       'The IPL calendar is packed, but not every fixture carries the same story. Rivalries, player form, venue history, and playoff pressure are what turn a match from background viewing into must-watch cricket.',
-      'This editorial guide focuses on the kinds of match details that help fans read the season with more context instead of only checking the final score.',
+      'Latest update: Rajasthan Royals beat Lucknow Super Giants by 7 wickets on May 19 after reaching 225/3 in 19.1 overs. The immediate watchlist now moves to KKR vs MI on May 20, GT vs CSK on May 21, and SRH vs RCB on May 22.',
     ],
     'sections' => [
       [
         'heading' => 'What usually makes a key IPL match',
         'items' => [
+          'Recent result pressure, such as RR keeping their campaign alive with a successful Jaipur chase.',
           'A rivalry with recent history.',
           'Two in-form top orders meeting at the right moment.',
           'A venue that strongly shapes pace or spin.',
