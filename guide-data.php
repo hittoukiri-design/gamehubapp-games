@@ -245,17 +245,17 @@ $guides = [
     'thumb' => 'live',
     'keywords' => ['live match hub', 'live cricket guide', 'cricket score context', 'match insights India'],
     'intro' => [
-      'A live match hub should do more than flash numbers. The latest IPL 2026 note is CSK 180/7 against SRH 181/5 on May 18, with Sunrisers Hyderabad winning by 5 wickets in Chennai.',
-      'The next watchlist starts with RR vs LSG on May 19, followed by KKR vs MI on May 20 and GT vs CSK on May 21. A useful hub helps Indian cricket users re-enter the story quickly instead of forcing them to reconstruct it from scratch.',
+      'A live match hub should do more than flash numbers. The latest IPL 2026 note is RR vs LSG on May 19, with Rajasthan chasing a 221 target after Lucknow set up the Jaipur run chase.',
+      'The next watchlist starts with KKR vs MI on May 20, followed by GT vs CSK on May 21 and SRH vs RCB on May 22. A useful hub helps Indian cricket users re-enter the story quickly instead of forcing them to reconstruct it from scratch.',
     ],
     'sections' => [
       [
         'heading' => 'What belongs in a strong match hub',
         'items' => [
-          'Latest result: CSK 180/7, SRH 181/5 in 19 overs.',
-          'Result status: Sunrisers Hyderabad won by 5 wickets.',
-          'Next fixture: RR vs LSG, May 19 at 7:30 PM IST.',
-          'Upcoming watchlist: KKR vs MI and GT vs CSK.',
+          'Latest live context: RR vs LSG, Rajasthan chase a 221 target in Jaipur.',
+          'Match note: keep score context separate from final result until the chase is complete.',
+          'Next fixture: KKR vs MI, May 20 at 7:30 PM IST.',
+          'Upcoming watchlist: GT vs CSK and SRH vs RCB.',
           'Links to previews, recaps, and related cricket guides.',
         ],
       ],

@@ -399,22 +399,22 @@ $homepageSchema = [
         <div class="score-top">
           <span class="live-badge">Latest</span>
           <span>IPL 2026</span>
-          <span>Match 63</span>
-          <span>Chennai, May 18</span>
+          <span>Match 64</span>
+          <span>Jaipur, May 19</span>
         </div>
         <div class="score-team">
-          <div><span class="team-badge mumbai">CSK</span><strong>Chennai Super Kings</strong></div>
-          <div><strong>180/7</strong><small>20 Overs</small></div>
+          <div><span class="team-badge mumbai">LSG</span><strong>Lucknow Super Giants</strong></div>
+          <div><strong>220 target</strong><small>Set for RR</small></div>
         </div>
         <div class="score-team">
-          <div><span class="team-badge chennai">SRH</span><strong>Sunrisers Hyderabad</strong></div>
-          <div><strong>181/5</strong><small>19 Overs</small></div>
+          <div><span class="team-badge chennai">RR</span><strong>Rajasthan Royals</strong></div>
+          <div><strong>Chase</strong><small>Live context</small></div>
         </div>
-        <p class="result-bar">Sunrisers Hyderabad won by 5 wickets</p>
+        <p class="result-bar">RR vs LSG live note: Rajasthan chase 221 in Jaipur</p>
         <div class="score-stats">
-          <div><small>Top Batsman</small><strong>Ishan Kishan</strong><span>70 for SRH</span></div>
-          <div><small>Next Match</small><strong>RR vs LSG</strong><span>May 19, 7:30 PM IST</span></div>
-          <div><small>Watchlist</small><strong>KKR vs MI</strong><span>May 20, 7:30 PM IST</span></div>
+          <div><small>Latest Note</small><strong>Target 221</strong><span>RR chase phase</span></div>
+          <div><small>Next Match</small><strong>KKR vs MI</strong><span>May 20, 7:30 PM IST</span></div>
+          <div><small>Watchlist</small><strong>GT vs CSK</strong><span>May 21, 7:30 PM IST</span></div>
         </div>
       </aside>
     </section>
