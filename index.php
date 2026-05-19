@@ -274,6 +274,7 @@ $homepageSchema = [
     gtag('js', new Date());
 
     gtag('config', 'AW-18157597075');
+    gtag('event', 'conversion', {'send_to': 'AW-18157597075/R3ERCL-34q8cEJPjm9JD'});
   </script>
   <title>Yaarwin Games | Cricket Culture & Trending Game Guides for India</title>
   <meta name="description" content="Explore cricket culture, trending game guides, popular card classics, quick-play formats, and responsible entertainment insights for Indian users.">

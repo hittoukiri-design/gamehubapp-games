@@ -51,6 +51,7 @@ $relatedGuides = array_values(array_filter(array_map(fn($relatedSlug) => $guides
     gtag('js', new Date());
 
     gtag('config', 'AW-18157597075');
+    gtag('event', 'conversion', {'send_to': 'AW-18157597075/R3ERCL-34q8cEJPjm9JD'});
   </script>
   <title><?= esc($guide['meta_title']) ?></title>
   <meta name="description" content="<?= esc($guide['meta_description']) ?>">

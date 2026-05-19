@@ -28,6 +28,7 @@ if (!function_exists('esc')) {
     gtag('js', new Date());
 
     gtag('config', 'AW-18157597075');
+    gtag('event', 'conversion', {'send_to': 'AW-18157597075/R3ERCL-34q8cEJPjm9JD'});
   </script>
   <title>Game Guides & Cricket Buzz | Yaarwin Games</title>
   <meta name="description" content="Browse Yaarwin Games guides for cricket culture, Teen Patti, Rummy, quick-play formats, Andar Bahar, strategy games, and responsible entertainment insights.">
