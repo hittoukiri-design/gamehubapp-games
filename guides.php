@@ -20,6 +20,15 @@ if (!function_exists('esc')) {
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18157597075"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-18157597075');
+  </script>
   <title>Game Guides & Cricket Buzz | Yaarwin Games</title>
   <meta name="description" content="Browse Yaarwin Games guides for cricket culture, Teen Patti, Rummy, quick-play formats, Andar Bahar, strategy games, and responsible entertainment insights.">
   <meta name="robots" content="index, follow">

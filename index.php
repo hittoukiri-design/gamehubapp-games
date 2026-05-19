@@ -266,6 +266,15 @@ $homepageSchema = [
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18157597075"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-18157597075');
+  </script>
   <title>Yaarwin Games | Cricket Culture & Trending Game Guides for India</title>
   <meta name="description" content="Explore cricket culture, trending game guides, popular card classics, quick-play formats, and responsible entertainment insights for Indian users.">
   <meta name="robots" content="<?= $isYwagAdmin ? 'noindex, nofollow' : 'index, follow' ?>">

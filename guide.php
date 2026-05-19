@@ -43,6 +43,15 @@ $relatedGuides = array_values(array_filter(array_map(fn($relatedSlug) => $guides
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18157597075"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-18157597075');
+  </script>
   <title><?= esc($guide['meta_title']) ?></title>
   <meta name="description" content="<?= esc($guide['meta_description']) ?>">
   <meta name="robots" content="index, follow">
