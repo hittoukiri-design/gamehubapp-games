@@ -26,6 +26,7 @@ $public_guide_slugs = [
   'app-info-center',
   'session-reminder-tips',
   'common-guide-faq',
+  'yaarwin-withdrawal-time-india',
   'aus-w-vs-eng-w-final-preview-womens-t20-world-cup-2026',
   'lsg-vs-pbks-result-ipl-2026',
   'lsg-vs-pbks-preview-ipl-2026',
@@ -285,6 +286,35 @@ $guides['lsg-vs-pbks-preview-ipl-2026'] = [
     ['What should fans watch first?', 'Watch the toss, confirmed XI, powerplay tempo and how each team handles the middle overs.'],
   ],
   'related' => ['library', 'guide-library-map', 'content-update-notes', 'reading-safety-notes'],
+];
+
+$guides['yaarwin-withdrawal-time-india'] = [
+  'title' => 'YaarWin Withdrawal Time India 2026: UPI Limits and Speed Checks',
+  'description' => 'Indian players researching YaarWin withdrawal time usually want to know how fast UPI payouts arrive, what limits apply, and how to prevent account delays.',
+  'h1' => 'YaarWin Withdrawal Time India 2026: UPI Limits and Speed Checks',
+  'kicker' => 'Payment and Withdrawal Guide',
+  'intro' => 'When searching for YaarWin withdrawal time, most users in India expect fast processing through UPI or IMPS. However, payout speed heavily depends on how well you prepare your account before requesting the withdrawal.',
+  'image' => thumb_asset_path('yaarwin-withdrawal-time-india'),
+  'image_alt' => 'YaarWin Withdrawal Time India 2026 graphic',
+  'sections' => [
+    [
+      'heading' => 'Typical Withdrawal Speeds',
+      'body' => ['Under normal conditions, a standard UPI withdrawal is processed within a few minutes to an hour. IMPS transfers usually take a few hours but can slow down during bank holidays. First-time withdrawals often require additional verification.'],
+    ],
+    [
+      'heading' => 'Common Delay Reasons',
+      'body' => ['Mismatched details between your YaarWin account and your UPI/Bank name are a primary cause of delays. Uncleared bonus turnover requirements and banking network congestion (NPCI) can also hold up payouts.'],
+    ],
+    [
+      'heading' => 'Best Practices for Fast Payouts',
+      'body' => ['Always double-check your UPI ID, use the same payment method for both deposits and withdrawals, and prefer withdrawing during regular banking hours if using IMPS to avoid late-night network maintenance.'],
+    ],
+  ],
+  'faq' => [
+    ['How fast is UPI withdrawal?', 'UPI withdrawals typically arrive within minutes to an hour after approval.'],
+    ['Why is my withdrawal delayed?', 'Delays are often due to name mismatches, uncleared bonus terms, or banking network downtime.'],
+  ],
+  'related' => ['library', 'guide-library-map', 'account-safety-tips'],
 ];
 
 $guides['aus-w-vs-eng-w-final-preview-womens-t20-world-cup-2026'] = [
