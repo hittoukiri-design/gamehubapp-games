@@ -26,7 +26,7 @@ $public_guide_slugs = [
   'app-info-center',
   'session-reminder-tips',
   'common-guide-faq',
-  'gamehub-withdrawal-time-india',
+  'gamehub-redemption-time-india',
   'aus-w-vs-eng-w-final-preview-womens-t20-world-cup-2026',
   'lsg-vs-pbks-result-ipl-2026',
   'lsg-vs-pbks-preview-ipl-2026',
@@ -288,18 +288,18 @@ $guides['lsg-vs-pbks-preview-ipl-2026'] = [
   'related' => ['library', 'guide-library-map', 'content-update-notes', 'reading-safety-notes'],
 ];
 
-$guides['gamehub-withdrawal-time-india'] = [
-  'title' => 'GameHub Withdrawal Time India 2026: UPI Limits and Speed Checks',
-  'description' => 'Indian players researching GameHub withdrawal time usually want to know how fast UPI payouts arrive, what limits apply, and how to prevent account delays.',
-  'h1' => 'GameHub Withdrawal Time India 2026: UPI Limits and Speed Checks',
-  'kicker' => 'Payment and Withdrawal Guide',
-  'intro' => 'When searching for GameHub withdrawal time, most users in India expect fast processing through UPI or IMPS. However, payout speed heavily depends on how well you prepare your account before requesting the withdrawal.',
-  'image' => thumb_asset_path('gamehub-withdrawal-time-india'),
-  'image_alt' => 'GameHub Withdrawal Time India 2026 graphic',
+$guides['gamehub-redemption-time-india'] = [
+  'title' => 'GameHub Redemption Time India 2026: UPI Limits and Speed Checks',
+  'description' => 'Indian players researching GameHub redemption time usually want to know how fast UPI payouts arrive, what limits apply, and how to prevent account delays.',
+  'h1' => 'GameHub Redemption Time India 2026: UPI Limits and Speed Checks',
+  'kicker' => 'Payment and Redemption Guide',
+  'intro' => 'When searching for GameHub redemption time, most users in India expect fast processing through UPI or IMPS. However, payout speed heavily depends on how well you prepare your account before requesting the redemption.',
+  'image' => thumb_asset_path('gamehub-redemption-time-india'),
+  'image_alt' => 'GameHub Redemption Time India 2026 graphic',
   'sections' => [
     [
-      'heading' => 'Typical Withdrawal Speeds',
-      'body' => ['Under normal conditions, a standard UPI withdrawal is processed within a few minutes to an hour. IMPS transfers usually take a few hours but can slow down during bank holidays. First-time withdrawals often require additional verification.'],
+      'heading' => 'Typical Redemption Speeds',
+      'body' => ['Under normal conditions, a standard UPI redemption is processed within a few minutes to an hour. IMPS transfers usually take a few hours but can slow down during bank holidays. First-time redemptions often require additional verification.'],
     ],
     [
       'heading' => 'Common Delay Reasons',
@@ -307,12 +307,12 @@ $guides['gamehub-withdrawal-time-india'] = [
     ],
     [
       'heading' => 'Best Practices for Fast Payouts',
-      'body' => ['Always double-check your UPI ID, use the same payment method for both deposits and withdrawals, and prefer withdrawing during regular banking hours if using IMPS to avoid late-night network maintenance.'],
+      'body' => ['Always double-check your UPI ID, use the same payment method for both topups and redemptions, and prefer redeeming during regular banking hours if using IMPS to avoid late-night network maintenance.'],
     ],
   ],
   'faq' => [
-    ['How fast is UPI withdrawal?', 'UPI withdrawals typically arrive within minutes to an hour after approval.'],
-    ['Why is my withdrawal delayed?', 'Delays are often due to name mismatches, uncleared bonus terms, or banking network downtime.'],
+    ['How fast is UPI redemption?', 'UPI redemptions typically arrive within minutes to an hour after approval.'],
+    ['Why is my redemption delayed?', 'Delays are often due to name mismatches, uncleared bonus terms, or banking network downtime.'],
   ],
   'related' => ['library', 'guide-library-map', 'account-safety-tips'],
 ];
@@ -323,7 +323,7 @@ $guides['aus-w-vs-eng-w-final-preview-womens-t20-world-cup-2026'] = [
   'h1' => 'AUS-W vs ENG-W Final Preview 2026: Lord\'s trophy test',
   'kicker' => 'Cricket Preview - AUS-W vs ENG-W Final',
   'intro' => 'Australia Women vs England Women final Sunday, July 5, 2026 ko Lord\'s, London mein scheduled hai. Australia depth vs England home momentum main story hai.',
-  'image' => thumb_asset_path('cricket-betting-india'),
+  'image' => thumb_asset_path('cricket-gaming-india'),
   'image_alt' => 'AUS-W vs ENG-W final preview cover',
   'sections' => [
     [
@@ -2181,7 +2181,7 @@ $guides['match-day-bankroll-discipline-india'] = [
   'meta_description' => 'A practical match-day bankroll discipline guide for Indian cricket fans covering fixed limits, stop rules, pause signals, and no-chasing habits.',
   'excerpt' => 'A calm match-day checklist for setting limits before the toss, avoiding emotional chasing, and keeping cricket entertainment inside a fixed budget.',
   'thumb' => 'match-day-discipline',
-  'keywords' => ['match day bankroll discipline India', 'cricket budget limit guide', 'avoid chasing losses cricket', 'responsible cricket betting India'],
+  'keywords' => ['match day bankroll discipline India', 'cricket budget limit guide', 'avoid chasing losses cricket', 'responsible cricket gaming India'],
   'intro' => [
     'Cricket match days can stretch across hours, and every wicket, partnership, rain delay, or momentum swing can create pressure to change the original plan. Bankroll discipline means deciding the limit before that pressure arrives.',
     'This guide is not a winning system. It is a responsible-play framework for Indian cricket fans who want entertainment spending to stay fixed, visible, and separate from essential money.',
@@ -2334,7 +2334,7 @@ $guides['aviator-session-timing-guide-india'] = [
   'sections' => [
     ['heading' => 'Why short sessions help', 'body' => ['A short session with a fixed stop point keeps the game readable. A long drifting session usually creates confusion, revenge entries, and bigger mistakes.', 'If the original plan was eight or ten controlled entries, keep it there.']],
     ['heading' => 'Pause signals worth respecting', 'body' => ['Two missed exits in a row, one sudden stake jump, or the urge to recover immediately are all pause signals.', 'The cleaner move is to stop, review, and return later instead of negotiating with the game while tilted.']],
-    ['heading' => 'How this connects to the wider guide flow', 'body' => ['Session timing works best when the player also understands account access, withdrawal readiness, and bankroll limits.', 'That is why this guide should sit next to Aviator basics, withdrawal notes, and safety explainers.']],
+    ['heading' => 'How this connects to the wider guide flow', 'body' => ['Session timing works best when the player also understands account access, redemption readiness, and bankroll limits.', 'That is why this guide should sit next to Aviator basics, redemption notes, and safety explainers.']],
   ],
   'faq' => [
     ['Is this a winning formula?', 'No. It is a session-control guide only.'],
@@ -2646,7 +2646,7 @@ $guides['session-limit-checklist-india'] = [
     [
       'heading' => 'Proof and payment calm-down',
       'body' => [
-        'Payment ya withdrawal confusion ke time fresh game entry avoid karo. Pehle screenshot, request ID, amount, method, and timestamp ko clean note mein rakho.',
+        'Payment ya redemption confusion ke time fresh game entry avoid karo. Pehle screenshot, request ID, amount, method, and timestamp ko clean note mein rakho.',
         'Support issue ko solve karne ki jagah game se recover karna usually bigger problem create karta hai.',
       ],
     ],
