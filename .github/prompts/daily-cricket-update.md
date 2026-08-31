@@ -1,4 +1,4 @@
-You are updating the yaarwinapp.games repository.
+You are updating the gamehubapp.games repository.
 
 Goal: keep cricket content fresh without misleading claims.
 

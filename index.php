@@ -73,8 +73,8 @@ if (!function_exists('esc')) {
   }
 }
 
-$schemaBaseUrl = 'https://yaarwinapp.games';
-$schemaLogoUrl = $schemaBaseUrl . '/assets/img/yaarwin-games-logo.webp';
+$schemaBaseUrl = 'https://gamehubapp.games';
+$schemaLogoUrl = $schemaBaseUrl . '/assets/img/gamehub-games-logo.webp';
 $schemaGuideItems = [];
 foreach (array_slice($article_cards, 0, 8) as $position => $article) {
   $guide = $guides[$article['slug']] ?? null;
@@ -103,17 +103,17 @@ $homepageSchema = [
     [
       '@type' => 'WebSite',
       '@id' => $schemaBaseUrl . '/#website',
-      'name' => 'Yaarwin Games',
-      'alternateName' => ['Yaarwin Games India', 'Yaarwin Cricket Games', 'Yaarwin Game Guides'],
+      'name' => 'gamehub Games',
+      'alternateName' => ['gamehub Games India', 'gamehub Cricket Games', 'gamehub Game Guides'],
       'url' => $schemaBaseUrl . '/',
       'inLanguage' => 'en-IN',
-      'description' => 'Yaarwin Games is an India-focused cricket culture and game guide hub covering live cricket context, Teen Patti, Rummy, Andar Bahar, quick-play formats, strategy guides and responsible play reminders.',
+      'description' => 'gamehub Games is an India-focused cricket culture and game guide hub covering live cricket context, Teen Patti, Rummy, Andar Bahar, quick-play formats, strategy guides and responsible play reminders.',
       'publisher' => ['@id' => $schemaBaseUrl . '/#organization'],
     ],
     [
       '@type' => 'Organization',
       '@id' => $schemaBaseUrl . '/#organization',
-      'name' => 'Yaarwin Games',
+      'name' => 'gamehub Games',
       'url' => $schemaBaseUrl . '/',
       'logo' => [
         '@type' => 'ImageObject',
@@ -122,7 +122,7 @@ $homepageSchema = [
         'height' => 105,
       ],
       'image' => $schemaLogoUrl,
-      'description' => 'Yaarwin Games publishes mobile-friendly cricket culture updates, game guides, card game explainers, quick-play overviews and responsible entertainment notes for Indian users.',
+      'description' => 'gamehub Games publishes mobile-friendly cricket culture updates, game guides, card game explainers, quick-play overviews and responsible entertainment notes for Indian users.',
     ],
     [
       '@type' => 'BreadcrumbList',
@@ -139,7 +139,7 @@ $homepageSchema = [
     [
       '@type' => ['WebApplication', 'SoftwareApplication'],
       '@id' => $schemaBaseUrl . '/#webapp',
-      'name' => 'Yaarwin Games Guide Hub',
+      'name' => 'gamehub Games Guide Hub',
       'url' => $schemaBaseUrl . '/',
       'applicationCategory' => 'GameApplication',
       'operatingSystem' => 'Android, iOS, Web',
@@ -168,8 +168,8 @@ $homepageSchema = [
     [
       '@type' => 'Article',
       '@id' => $schemaBaseUrl . '/#homepage-article',
-      'headline' => 'Yaarwin Games India Cricket Culture and Game Guide Hub',
-      'description' => 'Explore Yaarwin Games guides for cricket culture, live match context, IPL 2026 updates, Teen Patti, Rummy, Andar Bahar, quick-play formats and responsible entertainment habits.',
+      'headline' => 'gamehub Games India Cricket Culture and Game Guide Hub',
+      'description' => 'Explore gamehub Games guides for cricket culture, live match context, IPL 2026 updates, Teen Patti, Rummy, Andar Bahar, quick-play formats and responsible entertainment habits.',
       'url' => $schemaBaseUrl . '/',
       'mainEntityOfPage' => [
         '@type' => 'WebPage',
@@ -183,7 +183,7 @@ $homepageSchema = [
       ],
       'author' => [
         '@type' => 'Organization',
-        'name' => 'Yaarwin Games Editorial Team',
+        'name' => 'gamehub Games Editorial Team',
         'url' => $schemaBaseUrl . '/',
       ],
       'publisher' => ['@id' => $schemaBaseUrl . '/#organization'],
@@ -203,13 +203,13 @@ $homepageSchema = [
     [
       '@type' => 'ItemList',
       '@id' => $schemaBaseUrl . '/#trending-category-list',
-      'name' => 'Trending Yaarwin Games India Categories',
+      'name' => 'Trending gamehub Games India Categories',
       'itemListElement' => $schemaCategoryItems,
     ],
     [
       '@type' => 'ItemList',
       '@id' => $schemaBaseUrl . '/#latest-guide-list',
-      'name' => 'Fresh Yaarwin Games and Cricket Guides',
+      'name' => 'Fresh gamehub Games and Cricket Guides',
       'itemListElement' => $schemaGuideItems,
     ],
     [
@@ -218,15 +218,15 @@ $homepageSchema = [
       'mainEntity' => [
         [
           '@type' => 'Question',
-          'name' => 'What is Yaarwin Games?',
+          'name' => 'What is gamehub Games?',
           'acceptedAnswer' => [
             '@type' => 'Answer',
-            'text' => 'Yaarwin Games is an India-focused cricket culture and game information hub with guides for cricket context, Teen Patti, Rummy, Andar Bahar, quick-play formats and responsible entertainment habits.',
+            'text' => 'gamehub Games is an India-focused cricket culture and game information hub with guides for cricket context, Teen Patti, Rummy, Andar Bahar, quick-play formats and responsible entertainment habits.',
           ],
         ],
         [
           '@type' => 'Question',
-          'name' => 'Does Yaarwin Games cover cricket updates?',
+          'name' => 'Does gamehub Games cover cricket updates?',
           'acceptedAnswer' => [
             '@type' => 'Answer',
             'text' => 'Yes. The site covers cricket culture, IPL 2026 score context, live match hub guidance, upcoming match watchlists and cricket guide articles for Indian readers.',
@@ -242,10 +242,10 @@ $homepageSchema = [
         ],
         [
           '@type' => 'Question',
-          'name' => 'Is Yaarwin Games built for mobile users?',
+          'name' => 'Is gamehub Games built for mobile users?',
           'acceptedAnswer' => [
             '@type' => 'Answer',
-            'text' => 'Yes. Yaarwin Games is designed as a mobile-first guide hub so Indian readers can scan cricket updates, game articles and safety notes comfortably on phone screens.',
+            'text' => 'Yes. gamehub Games is designed as a mobile-first guide hub so Indian readers can scan cricket updates, game articles and safety notes comfortably on phone screens.',
           ],
         ],
         [
@@ -276,15 +276,15 @@ $homepageSchema = [
     gtag('config', 'AW-18157597075');
     gtag('event', 'conversion', {'send_to': 'AW-18157597075/R3ERCL-34q8cEJPjm9JD'});
   </script>
-  <title>Yaarwin Games | Cricket Culture & Trending Game Guides for India</title>
+  <title>gamehub Games | Cricket Culture & Trending Game Guides for India</title>
   <meta name="description" content="Explore cricket culture, trending game guides, popular card classics, quick-play formats, and responsible entertainment insights for Indian users.">
   <meta name="robots" content="<?= $isYwagAdmin ? 'noindex, nofollow' : 'index, follow' ?>">
-  <link rel="canonical" href="https://yaarwinapp.games/">
-  <meta property="og:title" content="Yaarwin Games | Cricket Culture & Trending Game Guides for India">
+  <link rel="canonical" href="https://gamehubapp.games/">
+  <meta property="og:title" content="gamehub Games | Cricket Culture & Trending Game Guides for India">
   <meta property="og:description" content="Explore cricket culture, trending game guides, popular card classics, quick-play formats, and responsible entertainment insights for Indian users.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://yaarwinapp.games/">
-  <meta property="og:site_name" content="Yaarwin Games">
+  <meta property="og:url" content="https://gamehubapp.games/">
+  <meta property="og:site_name" content="gamehub Games">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#07111F">
   <link rel="icon" href="<?= esc(asset_url('/assets/img/favicon.png')) ?>" type="image/png">
@@ -292,15 +292,15 @@ $homepageSchema = [
   <link rel="preload" href="<?= esc(asset_url('/assets/img/bat_ball_transparent.webp')) ?>" as="image" fetchpriority="high">
   <link rel="preload" href="<?= esc(asset_url('/assets/css/styles.css')) ?>" as="style">
   <link rel="stylesheet" href="<?= esc(asset_url('/assets/css/styles.css')) ?>">
-  <script type="application/ld+json" id="YaarwinGamesRichResultSchema"><?= json_encode($homepageSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) ?></script>
+  <script type="application/ld+json" id="gamehubGamesRichResultSchema"><?= json_encode($homepageSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) ?></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header" id="top">
     <nav class="nav-shell" aria-label="Primary navigation">
-      <a class="brand" href="/" aria-label="Yaarwin Games home">
-        <img class="brand-logo" src="<?= esc(asset_url('/assets/img/yaarwin-games-logo.webp')) ?>" alt="Yaarwin Games" width="224" height="90" decoding="async">
+      <a class="brand" href="/" aria-label="gamehub Games home">
+        <img class="brand-logo" src="<?= esc(asset_url('/assets/img/gamehub-games-logo.webp')) ?>" alt="gamehub Games" width="224" height="90" decoding="async">
       </a>
       <button class="menu-toggle" type="button" aria-controls="primary-menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -334,7 +334,7 @@ $homepageSchema = [
           <a class="btn btn-primary" href="#trending">Explore Trending Games <span aria-hidden="true" class="btn-arrow">→</span></a>
           <a class="btn btn-outline" href="#cricket">View Cricket Guides</a>
         </div>
-        <div class="hero-trust" aria-label="Yaarwin Games highlights">
+        <div class="hero-trust" aria-label="gamehub Games highlights">
           <div><span class="mini-icon shield"></span><strong>Latest Updates</strong><small>Stay ahead always.</small></div>
           <div><span class="mini-icon medal"></span><strong>Expert Guides</strong><small>Learn & improve.</small></div>
           <div><span class="mini-icon safe"></span><strong>Safe & Responsible</strong><small>Play smart, always.</small></div>
@@ -423,7 +423,7 @@ $homepageSchema = [
       <div class="section-heading">
         <div>
           <p class="accent-line"></p>
-          <h2>Why Users Love Yaarwin Games India</h2>
+          <h2>Why Users Love gamehub Games India</h2>
         </div>
       </div>
       <div class="love-grid">
@@ -478,11 +478,11 @@ $homepageSchema = [
     </section>
 
     <?php if ($isYwagAdmin): ?>
-    <section class="admin-visit-panel section-panel" aria-label="Private Yaarwin Games visit counter">
+    <section class="admin-visit-panel section-panel" aria-label="Private gamehub Games visit counter">
       <div class="section-heading">
         <div>
           <p class="eyebrow">Private Analytics</p>
-          <h2>Yaarwin Games Visit Counter</h2>
+          <h2>gamehub Games Visit Counter</h2>
         </div>
         <span class="admin-pill">Admin only</span>
       </div>
@@ -516,8 +516,8 @@ $homepageSchema = [
 
   <footer class="site-footer">
     <div class="footer-brand">
-      <a class="brand footer-logo-link" href="#top" aria-label="Yaarwin Games home">
-        <img class="brand-logo footer-logo" src="<?= esc(asset_url('/assets/img/yaarwin-games-logo.webp')) ?>" alt="Yaarwin Games" width="260" height="105" loading="lazy" decoding="async">
+      <a class="brand footer-logo-link" href="#top" aria-label="gamehub Games home">
+        <img class="brand-logo footer-logo" src="<?= esc(asset_url('/assets/img/gamehub-games-logo.webp')) ?>" alt="gamehub Games" width="260" height="105" loading="lazy" decoding="async">
       </a>
       <p>Your independent hub for cricket culture, trending games & digital entertainment content — made for India.</p>
       <div class="socials" aria-label="Social links">
@@ -549,9 +549,9 @@ $homepageSchema = [
     </div>
     <div class="note-box">
       <h2>Important Note</h2>
-      <p>Yaarwin Games is an independent entertainment and game-information hub. We do not operate games, account systems, payment flows, or prize services.</p>
+      <p>gamehub Games is an independent entertainment and game-information hub. We do not operate games, account systems, payment flows, or prize services.</p>
     </div>
-    <p class="copyright">© 2026 Yaarwin Games. All rights reserved.</p>
+    <p class="copyright">© 2026 gamehub Games. All rights reserved.</p>
   </footer>
   <script src="<?= esc(asset_url('/assets/js/site.js')) ?>" defer></script>
 </body>

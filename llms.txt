@@ -1,8 +1,8 @@
-# Yaarwin Games
+# gamehub Games
 
-Yaarwin Games is an independent cricket culture, trending games, and digital entertainment guide hub for Indian users.
+gamehub Games is an independent cricket culture, trending games, and digital entertainment guide hub for Indian users.
 
-Primary URL: https://yaarwinapp.games/
+Primary URL: https://gamehubapp.games/
 
 Important positioning:
 - Independent information and guide portal.

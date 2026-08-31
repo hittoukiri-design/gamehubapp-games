@@ -30,15 +30,15 @@ if (!function_exists('esc')) {
     gtag('config', 'AW-18157597075');
     gtag('event', 'conversion', {'send_to': 'AW-18157597075/R3ERCL-34q8cEJPjm9JD'});
   </script>
-  <title>Game Guides & Cricket Buzz | Yaarwin Games</title>
-  <meta name="description" content="Browse Yaarwin Games guides for cricket culture, Teen Patti, Rummy, quick-play formats, Andar Bahar, strategy games, and responsible entertainment insights.">
+  <title>Game Guides & Cricket Buzz | gamehub Games</title>
+  <meta name="description" content="Browse gamehub Games guides for cricket culture, Teen Patti, Rummy, quick-play formats, Andar Bahar, strategy games, and responsible entertainment insights.">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://yaarwinapp.games/guides/">
-  <meta property="og:title" content="Game Guides & Cricket Buzz | Yaarwin Games">
-  <meta property="og:description" content="Browse Yaarwin Games guides for cricket culture, Teen Patti, Rummy, quick-play formats, Andar Bahar, strategy games, and responsible entertainment insights.">
+  <link rel="canonical" href="https://gamehubapp.games/guides/">
+  <meta property="og:title" content="Game Guides & Cricket Buzz | gamehub Games">
+  <meta property="og:description" content="Browse gamehub Games guides for cricket culture, Teen Patti, Rummy, quick-play formats, Andar Bahar, strategy games, and responsible entertainment insights.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://yaarwinapp.games/guides/">
-  <meta property="og:site_name" content="Yaarwin Games">
+  <meta property="og:url" content="https://gamehubapp.games/guides/">
+  <meta property="og:site_name" content="gamehub Games">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#07111F">
   <link rel="icon" href="<?= esc(asset_url('/assets/img/favicon.png')) ?>" type="image/png">
@@ -49,8 +49,8 @@ if (!function_exists('esc')) {
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header" id="top">
     <nav class="nav-shell" aria-label="Primary navigation">
-      <a class="brand" href="/" aria-label="Yaarwin Games home">
-        <img class="brand-logo" src="<?= esc(asset_url('/assets/img/yaarwin-games-logo.webp')) ?>" alt="Yaarwin Games" width="224" height="90" decoding="async">
+      <a class="brand" href="/" aria-label="gamehub Games home">
+        <img class="brand-logo" src="<?= esc(asset_url('/assets/img/gamehub-games-logo.webp')) ?>" alt="gamehub Games" width="224" height="90" decoding="async">
       </a>
       <button class="menu-toggle" type="button" aria-controls="primary-menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -99,8 +99,8 @@ if (!function_exists('esc')) {
 
   <footer class="site-footer">
     <div class="footer-brand">
-      <a class="brand footer-logo-link" href="/" aria-label="Yaarwin Games home">
-        <img class="brand-logo footer-logo" src="<?= esc(asset_url('/assets/img/yaarwin-games-logo.webp')) ?>" alt="Yaarwin Games" width="260" height="105" loading="lazy" decoding="async">
+      <a class="brand footer-logo-link" href="/" aria-label="gamehub Games home">
+        <img class="brand-logo footer-logo" src="<?= esc(asset_url('/assets/img/gamehub-games-logo.webp')) ?>" alt="gamehub Games" width="260" height="105" loading="lazy" decoding="async">
       </a>
       <p>Your independent hub for cricket culture, trending games & digital entertainment content — made for India.</p>
     </div>
@@ -126,9 +126,9 @@ if (!function_exists('esc')) {
     </div>
     <div class="note-box">
       <h2>Important Note</h2>
-      <p>Yaarwin Games is an independent entertainment and game-information hub. We do not operate games, account systems, payment flows, or prize services.</p>
+      <p>gamehub Games is an independent entertainment and game-information hub. We do not operate games, account systems, payment flows, or prize services.</p>
     </div>
-    <p class="copyright">© 2026 Yaarwin Games. All rights reserved.</p>
+    <p class="copyright">© 2026 gamehub Games. All rights reserved.</p>
   </footer>
   <script src="<?= esc(asset_url('/assets/js/site.js')) ?>" defer></script>
 </body>

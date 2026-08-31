@@ -13,7 +13,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: yaarwinapp-games-manual-safe-deploy
+  group: gamehubapp-games-manual-safe-deploy
   cancel-in-progress: false
 
 jobs:
@@ -50,7 +50,7 @@ jobs:
 
           sort -u "$list" -o "$list"
           if grep -E '(^|/)(\.git|\.github|\.htaccess|guide\.php$|guides\.php$|index\.php$|api/|assets/data/|assets/css/|assets/js/|staging/|tools/|\.env)' "$list"; then
-            echo "::error::Deploy list contains protected yaarwinapp.games paths"
+            echo "::error::Deploy list contains protected gamehubapp.games paths"
             exit 1
           fi
 
@@ -76,10 +76,10 @@ jobs:
           chmod 600 ~/.ssh/id_ed25519
           ssh-keyscan -p "$PORT" "$HOST" >> ~/.ssh/known_hosts
           target="$USER@$HOST"
-          lock="/home/u779921565/.automation-locks/yaarwin-ecosystem.lock"
-          lock_payload="$(printf 'automation=github-actions-manual-safe-deploy\nsite=yaarwinapp.games\nrepo=%s\nrun=%s\ntime=%s\n' "$GITHUB_REPOSITORY" "$GITHUB_RUN_ID" "$(date -u +%FT%TZ)" | base64 | tr -d '\n')"
+          lock="/home/u779921565/.automation-locks/gamehub-ecosystem.lock"
+          lock_payload="$(printf 'automation=github-actions-manual-safe-deploy\nsite=gamehubapp.games\nrepo=%s\nrun=%s\ntime=%s\n' "$GITHUB_REPOSITORY" "$GITHUB_RUN_ID" "$(date -u +%FT%TZ)" | base64 | tr -d '\n')"
           ssh -p "$PORT" "$target" "mkdir -p /home/u779921565/.automation-locks && ( set -C; echo '$lock_payload' | base64 -d > '$lock' )"
-          trap 'ssh -p "$PORT" "$target" "rm -f /home/u779921565/.automation-locks/yaarwin-ecosystem.lock" || true' EXIT
+          trap 'ssh -p "$PORT" "$target" "rm -f /home/u779921565/.automation-locks/gamehub-ecosystem.lock" || true' EXIT
           backup="$REMOTE_PATH/.deploy-backups/${GITHUB_RUN_ID}-$(date -u +%Y%m%dT%H%M%SZ)"
           while IFS= read -r file; do
             case "$file" in

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://yaarwinapp.games/sitemap.xml
+Sitemap: https://gamehubapp.games/sitemap.xml

@@ -58,7 +58,7 @@ jobs:
             --output-last-message "$RUNNER_TEMP/codex-cricket-summary.txt" \
             - < .github/prompts/daily-cricket-update.md
 
-      - name: Run Yaarwin Games safety guard
+      - name: Run gamehub Games safety guard
         run: bash .github/scripts/guard-daily-cricket-update.sh
 
       - name: Commit and push changes

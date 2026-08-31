@@ -26,7 +26,7 @@ $public_guide_slugs = [
   'app-info-center',
   'session-reminder-tips',
   'common-guide-faq',
-  'yaarwin-withdrawal-time-india',
+  'gamehub-withdrawal-time-india',
   'aus-w-vs-eng-w-final-preview-womens-t20-world-cup-2026',
   'lsg-vs-pbks-result-ipl-2026',
   'lsg-vs-pbks-preview-ipl-2026',
@@ -163,7 +163,7 @@ foreach ($neutral_pages as $slug => [$type, $title, $description, $excerpt]) {
   $guides[$slug] = [
     'type' => $type,
     'title' => $title,
-    'meta_title' => $title . ' | Yaarwin Games',
+    'meta_title' => $title . ' | gamehub Games',
     'meta_description' => $description,
     'excerpt' => $excerpt,
     'thumb' => 'live',
@@ -242,7 +242,7 @@ $guides['library']['faq'] = [
 $guides['lsg-vs-pbks-preview-ipl-2026'] = [
   'type' => 'Cricket Culture',
   'title' => 'LSG vs PBKS Preview IPL 2026: Form, Players and Match Context',
-  'meta_title' => 'LSG vs PBKS Preview IPL 2026 | Yaarwin Games',
+  'meta_title' => 'LSG vs PBKS Preview IPL 2026 | gamehub Games',
   'meta_description' => 'Neutral LSG vs PBKS IPL 2026 preview with team form, player context, Lucknow home strategy and Punjab Kings momentum notes.',
   'excerpt' => 'A neutral cricket culture preview for Lucknow Super Giants vs Punjab Kings, focused on form, tactics and match context.',
   'thumb' => 'ind-afg-test',
@@ -288,14 +288,14 @@ $guides['lsg-vs-pbks-preview-ipl-2026'] = [
   'related' => ['library', 'guide-library-map', 'content-update-notes', 'reading-safety-notes'],
 ];
 
-$guides['yaarwin-withdrawal-time-india'] = [
-  'title' => 'YaarWin Withdrawal Time India 2026: UPI Limits and Speed Checks',
-  'description' => 'Indian players researching YaarWin withdrawal time usually want to know how fast UPI payouts arrive, what limits apply, and how to prevent account delays.',
-  'h1' => 'YaarWin Withdrawal Time India 2026: UPI Limits and Speed Checks',
+$guides['gamehub-withdrawal-time-india'] = [
+  'title' => 'GameHub Withdrawal Time India 2026: UPI Limits and Speed Checks',
+  'description' => 'Indian players researching GameHub withdrawal time usually want to know how fast UPI payouts arrive, what limits apply, and how to prevent account delays.',
+  'h1' => 'GameHub Withdrawal Time India 2026: UPI Limits and Speed Checks',
   'kicker' => 'Payment and Withdrawal Guide',
-  'intro' => 'When searching for YaarWin withdrawal time, most users in India expect fast processing through UPI or IMPS. However, payout speed heavily depends on how well you prepare your account before requesting the withdrawal.',
-  'image' => thumb_asset_path('yaarwin-withdrawal-time-india'),
-  'image_alt' => 'YaarWin Withdrawal Time India 2026 graphic',
+  'intro' => 'When searching for GameHub withdrawal time, most users in India expect fast processing through UPI or IMPS. However, payout speed heavily depends on how well you prepare your account before requesting the withdrawal.',
+  'image' => thumb_asset_path('gamehub-withdrawal-time-india'),
+  'image_alt' => 'GameHub Withdrawal Time India 2026 graphic',
   'sections' => [
     [
       'heading' => 'Typical Withdrawal Speeds',
@@ -303,7 +303,7 @@ $guides['yaarwin-withdrawal-time-india'] = [
     ],
     [
       'heading' => 'Common Delay Reasons',
-      'body' => ['Mismatched details between your YaarWin account and your UPI/Bank name are a primary cause of delays. Uncleared bonus turnover requirements and banking network congestion (NPCI) can also hold up payouts.'],
+      'body' => ['Mismatched details between your GameHub account and your UPI/Bank name are a primary cause of delays. Uncleared bonus turnover requirements and banking network congestion (NPCI) can also hold up payouts.'],
     ],
     [
       'heading' => 'Best Practices for Fast Payouts',
@@ -353,7 +353,7 @@ $guides['aus-w-vs-eng-w-final-preview-womens-t20-world-cup-2026'] = [
 $guides['lsg-vs-pbks-result-ipl-2026'] = [
   'type' => 'Cricket Culture',
   'title' => 'LSG vs PBKS Result IPL 2026: Punjab Chase 197 in Lucknow',
-  'meta_title' => 'LSG vs PBKS Result IPL 2026 | Yaarwin Games',
+  'meta_title' => 'LSG vs PBKS Result IPL 2026 | gamehub Games',
   'meta_description' => 'Neutral LSG vs PBKS IPL 2026 result recap with score context, Punjab Kings chase notes and Lucknow Super Giants innings summary.',
   'excerpt' => 'A neutral cricket culture recap of Punjab Kings chasing 197 against Lucknow Super Giants in Match 68 of IPL 2026.',
   'thumb' => 'live',
@@ -401,7 +401,7 @@ $guides['lsg-vs-pbks-result-ipl-2026'] = [
 $guides['mi-vs-rr-preview-ipl-2026'] = [
   'type' => 'Cricket Culture',
   'title' => 'MI vs RR Preview IPL 2026: Wankhede Form and Match Context',
-  'meta_title' => 'MI vs RR Preview IPL 2026 | Yaarwin Games',
+  'meta_title' => 'MI vs RR Preview IPL 2026 | gamehub Games',
   'meta_description' => 'Neutral MI vs RR IPL 2026 preview with Wankhede match context, Rajasthan Royals motivation, Mumbai Indians home strength and key tactical notes.',
   'excerpt' => 'A neutral cricket culture preview for Mumbai Indians vs Rajasthan Royals at Wankhede Stadium.',
   'thumb' => 'live',
@@ -450,7 +450,7 @@ $guides['mi-vs-rr-preview-ipl-2026'] = [
 $guides['kkr-vs-dc-preview-ipl-2026'] = [
   'type' => 'Cricket Culture',
   'title' => 'KKR vs DC Preview IPL 2026: Eden Gardens Form and Match Context',
-  'meta_title' => 'KKR vs DC Preview IPL 2026 | Yaarwin Games',
+  'meta_title' => 'KKR vs DC Preview IPL 2026 | gamehub Games',
   'meta_description' => 'Neutral KKR vs DC IPL 2026 preview with Eden Gardens match context, Delhi Capitals pressure, Kolkata Knight Riders strategy notes and key tactical angles.',
   'excerpt' => 'A neutral cricket culture preview for Kolkata Knight Riders vs Delhi Capitals at Eden Gardens.',
   'thumb' => 'live',
@@ -499,7 +499,7 @@ $guides['kkr-vs-dc-preview-ipl-2026'] = [
 $guides['kkr-vs-dc-result-ipl-2026'] = [
   'type' => 'Cricket Culture',
   'title' => 'KKR vs DC Result IPL 2026: Delhi Capitals Win by 40 Runs',
-  'meta_title' => 'KKR vs DC Result IPL 2026 | Yaarwin Games',
+  'meta_title' => 'KKR vs DC Result IPL 2026 | gamehub Games',
   'meta_description' => 'Neutral KKR vs DC IPL 2026 result recap with score context, Delhi Capitals batting push and playoff watchlist for upcoming matches.',
   'excerpt' => 'A neutral cricket culture recap of Delhi Capitals beating Kolkata Knight Riders by 40 runs in Match 70 of IPL 2026.',
   'thumb' => 'live',
@@ -542,7 +542,7 @@ $guides['kkr-vs-dc-result-ipl-2026'] = [
 $guides['rcb-vs-gt-qualifier-1-preview-ipl-2026'] = [
   'type' => 'Cricket Culture',
   'title' => 'RCB vs GT Qualifier 1 Prediction IPL 2026: Dharamshala Match Read',
-  'meta_title' => 'RCB vs GT Qualifier 1 Preview IPL 2026 | Yaarwin Games',
+  'meta_title' => 'RCB vs GT Qualifier 1 Preview IPL 2026 | gamehub Games',
   'meta_description' => 'RCB vs GT Qualifier 1 prediction in Hinglish style with Dharamshala match context, Bengaluru momentum, Gujarat Titans balance and a balanced winner call.',
   'excerpt' => 'A Hinglish-style cricket prediction for Royal Challengers Bengaluru vs Gujarat Titans in IPL 2026 Qualifier 1.',
   'thumb' => 'live',
@@ -577,7 +577,7 @@ $guides['rcb-vs-gt-qualifier-1-preview-ipl-2026'] = [
       'heading' => 'SEO + FOMO note for readers',
       'body' => [
         'Yeh RCB vs GT prediction un cricket readers ke liye hai jo clear IPL 2026 playoff context, team form notes, key player angles aur balanced pre-match read chahte hain.',
-        'Agar aap apni favourite team ko support karne ka mood bana rahe ho, toh YaarWin join flow aur match prep ko toss ke pehle hi set karna better hai instead of last-minute rush.',
+        'Agar aap apni favourite team ko support karne ka mood bana rahe ho, toh GameHub join flow aur match prep ko toss ke pehle hi set karna better hai instead of last-minute rush.',
       ],
     ],
   ],
@@ -592,7 +592,7 @@ $guides['rcb-vs-gt-qualifier-1-preview-ipl-2026'] = [
 $guides['rcb-vs-gt-qualifier-1-result-ipl-2026'] = [
   'type' => 'Cricket Culture',
   'title' => 'RCB vs GT Result IPL 2026 Qualifier 1: Bengaluru Win by 92 Runs',
-  'meta_title' => 'RCB vs GT Result IPL 2026 Qualifier 1 | Yaarwin Games',
+  'meta_title' => 'RCB vs GT Result IPL 2026 Qualifier 1 | gamehub Games',
   'meta_description' => 'Neutral RCB vs GT Qualifier 1 IPL 2026 result recap with score context, Patidar 93*, Gujarat collapse and what comes next in the playoffs.',
   'excerpt' => 'A neutral cricket culture recap of Royal Challengers Bengaluru beating Gujarat Titans by 92 runs in IPL 2026 Qualifier 1.',
   'thumb' => 'live',
@@ -635,7 +635,7 @@ $guides['rcb-vs-gt-qualifier-1-result-ipl-2026'] = [
 $guides['srh-vs-rr-eliminator-preview-ipl-2026'] = [
   'type' => 'Cricket Culture',
   'title' => 'SRH vs RR Eliminator Prediction IPL 2026: Kaun zyada likely jeetega?',
-  'meta_title' => 'SRH vs RR Eliminator Preview IPL 2026 | Yaarwin Games',
+  'meta_title' => 'SRH vs RR Eliminator Preview IPL 2026 | gamehub Games',
   'meta_description' => 'SRH vs RR Eliminator prediction in Hinglish with match context, pressure points, powerplay battle and a balanced probability call (not a guarantee).',
   'excerpt' => 'A Hinglish-style cricket prediction for Sunrisers Hyderabad vs Rajasthan Royals in the IPL 2026 Eliminator.',
   'thumb' => 'live',
@@ -677,7 +677,7 @@ $guides['srh-vs-rr-eliminator-preview-ipl-2026'] = [
       'heading' => 'SEO + FOMO CTA (soft)',
       'body' => [
         'Yeh SRH vs RR Eliminator prediction un cricket readers ke liye hai jo quick context, balanced opinion aur “kaun kyu jeet sakta hai” wala clear read chahte hain.',
-        'Agar aap apni favourite team ko support karna chahte ho, toh match time se pehle hi YaarWin join/registration complete rakhna better hota hai — last minute mein rush avoid karo.',
+        'Agar aap apni favourite team ko support karna chahte ho, toh match time se pehle hi GameHub join/registration complete rakhna better hota hai — last minute mein rush avoid karo.',
       ],
     ],
   ],
@@ -692,7 +692,7 @@ $guides['srh-vs-rr-eliminator-preview-ipl-2026'] = [
 $guides['srh-vs-rr-eliminator-result-ipl-2026'] = [
   'type' => 'Cricket Culture',
   'title' => 'SRH vs RR Result IPL 2026 Eliminator: Rajasthan Win by 47 Runs',
-  'meta_title' => 'SRH vs RR Result IPL 2026 Eliminator | Yaarwin Games',
+  'meta_title' => 'SRH vs RR Result IPL 2026 Eliminator | gamehub Games',
   'meta_description' => 'Neutral SRH vs RR Eliminator IPL 2026 result recap with score context (RR 243/8, SRH 196 all out), turning points and what comes next in the playoffs.',
   'excerpt' => 'A neutral cricket culture recap of Rajasthan Royals beating Sunrisers Hyderabad by 47 runs in the IPL 2026 Eliminator.',
   'thumb' => 'live',
@@ -735,7 +735,7 @@ $guides['srh-vs-rr-eliminator-result-ipl-2026'] = [
 $guides['gt-vs-rr-qualifier-2-preview-ipl-2026'] = [
   'type' => 'Cricket Culture',
   'title' => 'GT vs RR Qualifier 2 Prediction IPL 2026: Kaun Jeetega Tonight?',
-  'meta_title' => 'GT vs RR Qualifier 2 Preview IPL 2026 | Yaarwin Games',
+  'meta_title' => 'GT vs RR Qualifier 2 Preview IPL 2026 | gamehub Games',
   'meta_description' => 'Deep GT vs RR Qualifier 2 prediction with head-to-head history, recent form, player matchups, pitch factors and a balanced winner call.',
   'excerpt' => 'A deeper Hinglish-style prediction for Gujarat Titans vs Rajasthan Royals in IPL 2026 Qualifier 2, with winner probability and reasons.',
   'thumb' => 'live',
@@ -783,7 +783,7 @@ $guides['gt-vs-rr-qualifier-2-preview-ipl-2026'] = [
     [
       'heading' => 'Match-night FOMO: ready ho?',
       'body' => [
-        'Aaj raat GT vs RR sirf Qualifier 2 nahi, IPL 2026 Final ka gate hai. Apni favourite team ko support karna hai toh match start hone se pehle YaarWin registration ready rakho, invite code confirm karo, aur apna budget limit set kar lo.',
+        'Aaj raat GT vs RR sirf Qualifier 2 nahi, IPL 2026 Final ka gate hai. Apni favourite team ko support karna hai toh match start hone se pehle GameHub registration ready rakho, invite code confirm karo, aur apna budget limit set kar lo.',
         'Kya aap ready ho tonight ke sabse tense GT vs RR playoff battle ke liye? Last-minute rush avoid karo, responsible play rakho, aur toss ke baad team news confirm karke hi decision lo.',
       ],
     ],
@@ -799,7 +799,7 @@ $guides['gt-vs-rr-qualifier-2-preview-ipl-2026'] = [
 $guides['gt-vs-rr-qualifier-2-result-ipl-2026'] = [
   'type' => 'Cricket Culture',
   'title' => 'GT vs RR Result IPL 2026 Qualifier 2: Titans Chase 219 to Reach Final',
-  'meta_title' => 'GT vs RR Result IPL 2026 Qualifier 2 | Yaarwin Games',
+  'meta_title' => 'GT vs RR Result IPL 2026 Qualifier 2 | gamehub Games',
   'meta_description' => 'GT vs RR Qualifier 2 IPL 2026 result recap with verified score (RR 214/6, GT 219/3 in 18.4) and simple turning points in Hinglish.',
   'excerpt' => 'A neutral Hinglish-style recap of Gujarat Titans beating Rajasthan Royals by 7 wickets in IPL 2026 Qualifier 2.',
   'thumb' => 'live',
@@ -842,7 +842,7 @@ $guides['gt-vs-rr-qualifier-2-result-ipl-2026'] = [
 $guides['rcb-vs-gt-final-preview-ipl-2026'] = [
   'type' => 'Cricket Culture',
   'title' => 'RCB vs GT Final Prediction IPL 2026: Kaun Jeetega (Balanced Opinion)?',
-  'meta_title' => 'RCB vs GT Final Preview IPL 2026 | Yaarwin Games',
+  'meta_title' => 'RCB vs GT Final Preview IPL 2026 | gamehub Games',
   'meta_description' => 'RCB vs GT IPL 2026 Final preview and prediction with matchup factors, pressure moments and a balanced probability call (no guaranteed result claims).',
   'excerpt' => 'A Hinglish-friendly, probability-style preview for RCB vs GT in the IPL 2026 Final — balanced, not guaranteed.',
   'thumb' => 'live',
@@ -876,7 +876,7 @@ $guides['rcb-vs-gt-final-preview-ipl-2026'] = [
     [
       'heading' => 'FOMO reminder (responsible)',
       'body' => [
-        'IPL Final night par hype max hoti hai — but decision calm rakhna important hai. Apni favourite team ko support karna hai toh match time se pehle hi YaarWin join/registration complete rakhna better hota hai, last-minute rush avoid karo.',
+        'IPL Final night par hype max hoti hai — but decision calm rakhna important hai. Apni favourite team ko support karna hai toh match time se pehle hi GameHub join/registration complete rakhna better hota hai, last-minute rush avoid karo.',
         'Always play responsibly: budget limit set karo, aur toss/playing XI confirm karne ke baad hi apna final read lock karo.',
       ],
     ],
@@ -892,7 +892,7 @@ $guides['rcb-vs-gt-final-preview-ipl-2026'] = [
 $guides['rcb-vs-gt-final-result-ipl-2026'] = [
   'type' => 'Cricket Culture',
   'title' => 'RCB vs GT Final Result IPL 2026: RCB Back-to-Back Champions, Kohli 75* se 5-wicket Win',
-  'meta_title' => 'RCB vs GT Final Result IPL 2026 | Yaarwin Games',
+  'meta_title' => 'RCB vs GT Final Result IPL 2026 | gamehub Games',
   'meta_description' => 'RCB vs GT IPL 2026 Final result recap: confirmed score, winner, margin, key moments and match takeaway notes in Hinglish.',
   'excerpt' => 'IPL 2026 Final recap: GT 155/8, RCB 161/5 (18 ov) — RCB won by 5 wickets, Kohli 75* stood out, and Bengaluru became back-to-back champions.',
   'thumb' => 'live',
@@ -934,7 +934,7 @@ $guides['rcb-vs-gt-final-result-ipl-2026'] = [
       'heading' => 'What fans should remember (context + takeaway)',
       'body' => [
         'Congratulations RCB fans, aur congrats un readers ko bhi jinhone apni favourite team ko smartly support kiya.',
-        'Next cricket event se pehle YaarWinApp.co/register flow ready rakho, team news check karo, and put your bet on only after setting your own limit. FOMO ke chakkar mein last-minute rush mat karo.',
+        'Next cricket event se pehle gamehub-app.co/register flow ready rakho, team news check karo, and put your bet on only after setting your own limit. FOMO ke chakkar mein last-minute rush mat karo.',
       ],
     ],
   ],
@@ -949,7 +949,7 @@ $guides['rcb-vs-gt-final-result-ipl-2026'] = [
 $guides['pak-vs-aus-2nd-odi-result-2026'] = [
   'type' => 'Cricket Culture',
   'title' => 'PAK vs AUS 2nd ODI Result 2026: Australia ne Lahore mein 41-run se series level ki',
-  'meta_title' => 'PAK vs AUS 2nd ODI Result 2026 | Yaarwin Games',
+  'meta_title' => 'PAK vs AUS 2nd ODI Result 2026 | gamehub Games',
   'meta_description' => 'Pakistan vs Australia 2nd ODI 2026 result recap with verified score, winner, margin, venue and simple Hinglish match context.',
   'excerpt' => 'Verified Lahore recap: Australia 231/9, Pakistan 190 all out, Nathan Ellis 4/33, and series now 1-1.',
   'thumb' => 'live',
@@ -999,7 +999,7 @@ $guides['pak-vs-aus-2nd-odi-result-2026'] = [
 $guides['pak-vs-aus-3rd-odi-preview-2026'] = [
   'type' => 'Cricket Culture',
   'title' => 'PAK vs AUS 3rd ODI Prediction (Jun 4): Kaun zyada likely jeetega aur kyun?',
-  'meta_title' => 'PAK vs AUS 3rd ODI Preview 2026 | Yaarwin Games',
+  'meta_title' => 'PAK vs AUS 3rd ODI Preview 2026 | gamehub Games',
   'meta_description' => 'Pakistan vs Australia 3rd ODI prediction in Hinglish style with Lahore decider context, matchup angles and a balanced probability call (opinion only).',
   'excerpt' => 'Fresh Hinglish preview for the June 4 Lahore decider: Pakistan slight edge, but only as probability and opinion, not a guarantee.',
   'thumb' => 'live',
@@ -1034,7 +1034,7 @@ $guides['pak-vs-aus-3rd-odi-preview-2026'] = [
       'heading' => 'Final call + soft FOMO CTA',
       'body' => [
         'Balanced probability call: Pakistan 53% vs Australia 47% (opinion). Yeh margin narrow hai, so ek strong partnership ya new-ball spell pura match flip kar sakta hai.',
-        'Agar aap apni favourite side ko support karne wale ho, toh match time se pehle YaarWin join/register flow aur reading prep calm way mein kar lo. Last-minute rush ya guaranteed-win mindset avoid karo, and always play responsibly.',
+        'Agar aap apni favourite side ko support karne wale ho, toh match time se pehle GameHub join/register flow aur reading prep calm way mein kar lo. Last-minute rush ya guaranteed-win mindset avoid karo, and always play responsibly.',
       ],
     ],
   ],
@@ -1049,9 +1049,9 @@ $guides['pak-vs-aus-3rd-odi-preview-2026'] = [
 $guides['eng-vs-nz-1st-test-preview-2026'] = [
   'type' => 'Cricket Culture',
   'title' => 'ENG vs NZ 1st Test Prediction (Lord’s, Jun 4-8): Kaun zyada likely win aur kyun?',
-  'meta_title' => 'ENG vs NZ 1st Test Preview 2026 | Yaarwin Games',
+  'meta_title' => 'ENG vs NZ 1st Test Preview 2026 | gamehub Games',
   'meta_description' => 'England vs New Zealand 1st Test 2026 prediction in Hinglish style with Lord’s conditions, fresh team context and a balanced probability call (opinion only).',
-  'excerpt' => 'Fresh Lord’s Test preview in Hinglish: conditions, first-innings pressure and a balanced probability-style call with a soft YaarWin CTA.',
+  'excerpt' => 'Fresh Lord’s Test preview in Hinglish: conditions, first-innings pressure and a balanced probability-style call with a soft GameHub CTA.',
   'thumb' => 'live',
   'keywords' => ['ENG vs NZ 1st Test prediction', 'England vs New Zealand Lord’s Test', 'who will win ENG vs NZ', 'Test match prediction opinion'],
   'intro' => [
@@ -1084,7 +1084,7 @@ $guides['eng-vs-nz-1st-test-preview-2026'] = [
       'heading' => 'Final call (probability only) + responsible FOMO reminder',
       'body' => [
         'Balanced call: England 54% vs New Zealand 46% (opinion). Key themes hain day-1 wickets, first-innings lead aur kis team ka top order pressure better absorb karta hai.',
-        'Match hype high hoga, especially Lord’s opener ke around. Apni favourite team ko support karna hai toh match start se pehle YaarWin join/registration ready rakhna better hota hai, but decision hamesha calmly lo and always play responsibly.',
+        'Match hype high hoga, especially Lord’s opener ke around. Apni favourite team ko support karna hai toh match start se pehle GameHub join/registration ready rakhna better hota hai, but decision hamesha calmly lo and always play responsibly.',
       ],
     ],
   ],
@@ -1099,7 +1099,7 @@ $guides['eng-vs-nz-1st-test-preview-2026'] = [
 $guides['pak-vs-aus-3rd-odi-result-2026'] = [
   'type' => 'Cricket Culture',
   'title' => 'PAK vs AUS 3rd ODI Result 2026: Pakistan ne Lahore chase karke series 2-1 se jeeti',
-  'meta_title' => 'PAK vs AUS 3rd ODI Result 2026 | Yaarwin Games',
+  'meta_title' => 'PAK vs AUS 3rd ODI Result 2026 | gamehub Games',
   'meta_description' => 'Pakistan vs Australia 3rd ODI 2026 result recap with verified score, winner, margin, venue and Hinglish match context.',
   'excerpt' => 'Verified Lahore recap: Australia 157 all out, Pakistan 161/6, and Pakistan sealed the ODI series 2-1.',
   'thumb' => 'live',
@@ -1134,7 +1134,7 @@ $guides['pak-vs-aus-3rd-odi-result-2026'] = [
       'heading' => 'What comes next for fans',
       'body' => [
         'Series ab Pakistan ke naam 2-1 ho gayi, aur next verified marquee watchlist ab India vs Afghanistan 1st ODI par shift hoti hai on Saturday, June 13, 2026 at HPCA Stadium, Dharamsala.',
-        'Agar aap next big match ke liye apni favourite team ko support karna chahte ho, toh YaarWin join/register flow match time se pehle check kar lo. Hamesha probability mindset rakho, last-minute hype ya guaranteed-win thinking nahi.',
+        'Agar aap next big match ke liye apni favourite team ko support karna chahte ho, toh GameHub join/register flow match time se pehle check kar lo. Hamesha probability mindset rakho, last-minute hype ya guaranteed-win thinking nahi.',
       ],
     ],
   ],
@@ -1149,7 +1149,7 @@ $guides['pak-vs-aus-3rd-odi-result-2026'] = [
 $guides['ind-vs-afg-one-off-test-preview-2026'] = [
   'type' => 'Cricket Culture',
   'title' => 'IND vs AFG One-off Test Prediction (Jun 6-10): India slight edge, lekin Afghanistan ko lightly mat lo',
-  'meta_title' => 'IND vs AFG One-off Test Preview 2026 | Yaarwin Games',
+  'meta_title' => 'IND vs AFG One-off Test Preview 2026 | gamehub Games',
   'meta_description' => 'India vs Afghanistan one-off Test 2026 prediction in Hinglish style with Mullanpur conditions, squad context and a balanced probability call (opinion only).',
   'excerpt' => 'Fresh Hinglish preview for the June 6-10 one-off Test in Mullanpur: India start ahead at home, but Afghanistan still have enough spin threat to stay live.',
   'thumb' => 'live',
@@ -1184,7 +1184,7 @@ $guides['ind-vs-afg-one-off-test-preview-2026'] = [
       'heading' => 'Final call + soft CTA',
       'body' => [
         'Balanced probability call: India 63% vs Afghanistan 37% (opinion). India clear favourites hain, but yeh itna one-sided nahi hai ki upset impossible ho jaye.',
-        'Agar aap next marquee red-ball match ke liye apni side ko support karne wale ho, toh YaarWin register/join flow aur reading prep match start se pehle complete kar lo. FOMO mein rush mat karo, apni limit aur responsible mindset pehle set karo.',
+        'Agar aap next marquee red-ball match ke liye apni side ko support karne wale ho, toh GameHub register/join flow aur reading prep match start se pehle complete kar lo. FOMO mein rush mat karo, apni limit aur responsible mindset pehle set karo.',
       ],
     ],
   ],
@@ -1199,7 +1199,7 @@ $guides['ind-vs-afg-one-off-test-preview-2026'] = [
 $guides['ban-vs-aus-1st-odi-result-2026'] = [
   'type' => 'Cricket result',
   'title' => 'BAN vs AUS 1st ODI Result 2026: Bangladesh ne Australia ko 86 runs via DLS se hara diya',
-  'meta_title' => 'BAN vs AUS 1st ODI Result 2026 | Yaarwin Games',
+  'meta_title' => 'BAN vs AUS 1st ODI Result 2026 | gamehub Games',
   'meta_description' => 'Bangladesh beat Australia by 86 runs via DLS in the 1st ODI at Mirpur after making 284/8 and restricting Australia to 191/9 in a rain-shortened chase.',
   'excerpt' => 'Historic Mirpur result: Bangladesh 284/8, Australia 191/9 in 42.2 overs, and BAN lead the ODI series 1-0.',
   'thumb' => 'ban-aus-1st-odi-result',
@@ -1242,7 +1242,7 @@ $guides['ban-vs-aus-1st-odi-result-2026'] = [
 $guides['ban-vs-aus-2nd-odi-preview-2026'] = [
   'type' => 'Cricket Culture',
   'title' => 'BAN vs AUS 2nd ODI Prediction 2026: Bangladesh edge ya Australia comeback?',
-  'meta_title' => 'BAN vs AUS 2nd ODI Preview 2026 | Yaarwin Games',
+  'meta_title' => 'BAN vs AUS 2nd ODI Preview 2026 | gamehub Games',
   'meta_description' => 'Bangladesh vs Australia 2nd ODI prediction in Hinglish style with Dhaka conditions, series pressure, likely match themes and a balanced probability call (opinion only).',
   'excerpt' => 'Fresh Dhaka preview for Thursday, June 11, 2026: Bangladesh slight edge, but Australia still have a clean comeback route.',
   'thumb' => 'live',
@@ -1284,7 +1284,7 @@ $guides['ban-vs-aus-2nd-odi-preview-2026'] = [
       'heading' => 'Final call + soft FOMO CTA',
       'body' => [
         'Balanced probability call: Bangladesh 52% vs Australia 48% (opinion). Margin narrow hai, so ek strong partnership ya one collapse phase pura match flip kar sakta hai.',
-        'Agar aap apni favourite team ko support karna chahte ho, toh YaarWin join/register flow match time se pehle ready rakhna practical hai. Bas rush ya guaranteed-win mindset avoid karo, aur har move ko responsible frame mein lo.',
+        'Agar aap apni favourite team ko support karna chahte ho, toh GameHub join/register flow match time se pehle ready rakhna practical hai. Bas rush ya guaranteed-win mindset avoid karo, aur har move ko responsible frame mein lo.',
       ],
     ],
   ],
@@ -1299,7 +1299,7 @@ $guides['ban-vs-aus-2nd-odi-preview-2026'] = [
 $guides['ban-vs-aus-2nd-odi-result-2026'] = [
   'type' => 'Cricket Culture',
   'title' => 'BAN vs AUS 2nd ODI Result 2026: Bangladesh ne 5-wicket win se Australia par historic series seal ki',
-  'meta_title' => 'BAN vs AUS 2nd ODI Result 2026 | Yaarwin Games',
+  'meta_title' => 'BAN vs AUS 2nd ODI Result 2026 | gamehub Games',
   'meta_description' => 'Bangladesh vs Australia 2nd ODI 2026 result recap with verified score, revised chase, winner, margin, venue and Hinglish match context.',
   'excerpt' => 'Verified Dhaka recap: Australia 187/8 in 42 overs, Bangladesh 195/5 in a revised chase, aur series ab Bangladesh ke naam 2-0 ho gayi.',
   'thumb' => 'wi-w-nz-w-t20wc-2026',
@@ -1333,7 +1333,7 @@ $guides['ban-vs-aus-2nd-odi-result-2026'] = [
     [
       'heading' => 'Soft CTA, but responsible',
       'body' => [
-        'Agar aap next white-ball match se pehle apni favourite team ko support karna chahte ho, toh YaarWin join/register setup match time se pehle ready rakhna useful ho sakta hai.',
+        'Agar aap next white-ball match se pehle apni favourite team ko support karna chahte ho, toh GameHub join/register setup match time se pehle ready rakhna useful ho sakta hai.',
         'Bas clear raho: preview opinion alag hota hai, guaranteed result claim alag. Responsible pace hi better playbook hai.',
       ],
     ],
@@ -1349,7 +1349,7 @@ $guides['ban-vs-aus-2nd-odi-result-2026'] = [
 $guides['ind-vs-afg-one-off-test-result-2026'] = [
   'type' => 'Cricket Culture',
   'title' => 'IND vs AFG One-off Test Result 2026: India ne Mullanpur mein innings aur 300 runs se record-style jeet li',
-  'meta_title' => 'IND vs AFG One-off Test Result 2026 | Yaarwin Games',
+  'meta_title' => 'IND vs AFG One-off Test Result 2026 | gamehub Games',
   'meta_description' => 'India vs Afghanistan one-off Test 2026 result recap with verified score, winner, margin, venue and Hinglish match context.',
   'excerpt' => 'Verified New Chandigarh recap: India 564/8 decl., Afghanistan 152 and 112 follow-on, aur India ne innings aur 300 runs se jeet liya.',
   'thumb' => 'ind-w-ned-w-preview-2026',
@@ -1384,7 +1384,7 @@ $guides['ind-vs-afg-one-off-test-result-2026'] = [
       'heading' => 'What to watch next + soft CTA',
       'body' => [
         'Ab next marquee fixture India vs Afghanistan 1st ODI hai at Dharamsala on Saturday, June 13, 2026. ODI format mein one powerplay spell ya one 80-run stand pura mood flip kar sakta hai.',
-        'Agar aap apni favourite team ko support karne wale ho, toh YaarWin join/register setup match se pehle ready rakhna practical ho sakta hai. Bas yaad rakho: excitement alag cheez hai, guaranteed result claim bilkul alag cheez hai.',
+        'Agar aap apni favourite team ko support karne wale ho, toh GameHub join/register setup match se pehle ready rakhna practical ho sakta hai. Bas yaad rakho: excitement alag cheez hai, guaranteed result claim bilkul alag cheez hai.',
       ],
     ],
   ],
@@ -1399,7 +1399,7 @@ $guides['ind-vs-afg-one-off-test-result-2026'] = [
 $guides['ind-vs-afg-1st-odi-preview-2026'] = [
   'type' => 'Cricket Culture',
   'title' => 'IND vs AFG 1st ODI Prediction 2026: India slight edge, lekin Afghanistan ko lightly mat lo',
-  'meta_title' => 'IND vs AFG 1st ODI Preview 2026 | Yaarwin Games',
+  'meta_title' => 'IND vs AFG 1st ODI Preview 2026 | gamehub Games',
   'meta_description' => 'India vs Afghanistan 1st ODI 2026 prediction in Hinglish style with Dharamsala conditions, matchup angles and a balanced probability call (opinion only).',
   'excerpt' => 'Fresh Hinglish preview for the June 13 Dharamsala ODI: India start ahead at home, but Afghanistan still have a live upset path.',
   'thumb' => 'cricket',
@@ -1434,7 +1434,7 @@ $guides['ind-vs-afg-1st-odi-preview-2026'] = [
       'heading' => 'Final call + soft CTA',
       'body' => [
         'Balanced probability call: India 64% vs Afghanistan 36% (opinion). India favourite hai, but yeh one-sided guaranteed call nahi hai.',
-        'Agar aap apni favourite side ko support karna chahte ho, toh match time se pehle YaarWin join/register flow ready rakhna better hota hai. FOMO ko rush mein convert mat karo, aur har decision ko responsible mindset ke saath lo.',
+        'Agar aap apni favourite side ko support karna chahte ho, toh match time se pehle GameHub join/register flow ready rakhna better hota hai. FOMO ko rush mein convert mat karo, aur har decision ko responsible mindset ke saath lo.',
       ],
     ],
   ],
@@ -1449,7 +1449,7 @@ $guides['ind-vs-afg-1st-odi-preview-2026'] = [
 $guides['ind-vs-pak-womens-t20-world-cup-preview-2026'] = [
   'type' => 'Cricket Culture',
   'title' => 'IND vs PAK Women’s T20 World Cup Prediction 2026: India slight edge, lekin pressure dono side par',
-  'meta_title' => 'IND vs PAK Women’s T20 World Cup Preview 2026 | Yaarwin Games',
+  'meta_title' => 'IND vs PAK Women’s T20 World Cup Preview 2026 | gamehub Games',
   'meta_description' => 'India vs Pakistan Women’s T20 World Cup 2026 prediction in Hinglish style with Edgbaston context, matchup angles and a balanced probability call (opinion only).',
   'excerpt' => 'Fresh Hinglish preview for June 14 at Edgbaston: India start slightly ahead, but Pakistan ka upset route bhi bilkul live hai.',
   'thumb' => 'cricket',
@@ -1484,7 +1484,7 @@ $guides['ind-vs-pak-womens-t20-world-cup-preview-2026'] = [
       'heading' => 'Final call + soft FOMO CTA',
       'body' => [
         'Balanced probability call: India 57% vs Pakistan 43% (opinion). Edge India ke paas hai, but yeh bilkul guaranteed ya one-sided call nahi hai.',
-        'Agar aap apni favourite team ko support karne wale ho, toh match time se pehle YaarWin join/register setup calm way mein ready rakh lo. FOMO ko rush mein convert mat karo, aur har decision responsibly lo.',
+        'Agar aap apni favourite team ko support karne wale ho, toh match time se pehle GameHub join/register setup calm way mein ready rakh lo. FOMO ko rush mein convert mat karo, aur har decision responsibly lo.',
       ],
     ],
   ],
@@ -1499,7 +1499,7 @@ $guides['ind-vs-pak-womens-t20-world-cup-preview-2026'] = [
 $guides['wi-w-vs-nz-w-result-womens-t20-world-cup-2026'] = [
   'type' => 'Cricket Culture',
   'title' => 'WI-W vs NZ-W Result 2026: West Indies Women ne defending champions ko 7 wickets se shock diya',
-  'meta_title' => 'WI-W vs NZ-W Result 2026 | Yaarwin Games',
+  'meta_title' => 'WI-W vs NZ-W Result 2026 | gamehub Games',
   'meta_description' => 'West Indies Women vs New Zealand Women T20 World Cup 2026 result recap with verified score, winner, margin, venue and Hinglish match context.',
   'excerpt' => 'Verified Rose Bowl recap: New Zealand Women 162/6, West Indies Women 163/3, aur Shemaine Campbelle ke unbeaten 90 ne defending champions ko stun kar diya.',
   'thumb' => 'wi-w-nz-w-t20wc-2026',
@@ -1549,7 +1549,7 @@ $guides['wi-w-vs-nz-w-result-womens-t20-world-cup-2026'] = [
 $guides['eng-w-vs-ire-w-result-womens-t20-world-cup-2026'] = [
   'type' => 'Cricket Culture',
   'title' => 'ENG-W vs IRE-W Result 2026: England Women ne late wobble ke baad Ireland ko 4 wickets se roka',
-  'meta_title' => 'ENG-W vs IRE-W Result 2026 | Yaarwin Games',
+  'meta_title' => 'ENG-W vs IRE-W Result 2026 | gamehub Games',
   'meta_description' => 'England Women vs Ireland Women T20 World Cup 2026 result recap with verified score, winner, margin, venue and Hinglish match context.',
   'excerpt' => 'Verified Southampton recap: Ireland Women 118/9, England Women 119/6, aur Nat Sciver-Brunt ke 48 ne chase ko line ke paar pahunchaya.',
   'thumb' => 'eng-w-ire-w-preview-2026',
@@ -1599,7 +1599,7 @@ $guides['eng-w-vs-ire-w-result-womens-t20-world-cup-2026'] = [
 $guides['ind-w-vs-ned-w-preview-womens-t20-world-cup-2026'] = [
   'type' => 'Cricket Culture',
   'title' => 'IND-W vs NED-W Prediction 2026: India edge clear hai, par Netherlands ka upset route abhi bhi live hai',
-  'meta_title' => 'IND-W vs NED-W Preview 2026 | Yaarwin Games',
+  'meta_title' => 'IND-W vs NED-W Preview 2026 | gamehub Games',
   'meta_description' => 'India Women vs Netherlands Women T20 World Cup 2026 prediction in Hinglish style with Headingley context, matchup angles and a balanced probability call (opinion only).',
   'excerpt' => 'Fresh Hinglish preview for June 17 at Headingley: India clear favourites hain, but Netherlands Women ka disciplined upset route phir bhi live hai.',
   'thumb' => 'ind-w-ned-w-preview-2026',
@@ -1634,7 +1634,7 @@ $guides['ind-w-vs-ned-w-preview-womens-t20-world-cup-2026'] = [
       'heading' => 'Final call + soft FOMO CTA',
       'body' => [
         'Balanced probability call: India Women 72% vs Netherlands Women 28% (opinion). Edge clearly India ke paas hai, lekin T20 format mein one big collapse phase ya surprise spell sab kuch fast change kar sakta hai.',
-        'Agar aap Women in Blue ko support karne wale ho, toh YaarWin join/register prep ko match se pehle hi settle kar lo. Match time ke just pehle rush karne se better hai ki account path, budget aur team-news read pehle se ready rahe.',
+        'Agar aap Women in Blue ko support karne wale ho, toh GameHub join/register prep ko match se pehle hi settle kar lo. Match time ke just pehle rush karne se better hai ki account path, budget aur team-news read pehle se ready rahe.',
       ],
     ],
   ],
@@ -1649,7 +1649,7 @@ $guides['ind-w-vs-ned-w-preview-womens-t20-world-cup-2026'] = [
 $guides['ind-w-vs-ned-w-result-womens-t20-world-cup-2026'] = [
   'type' => 'Cricket Culture',
   'title' => 'IND-W vs NED-W Result 2026: India Women ne Headingley mein 95-run statement diya',
-  'meta_title' => 'IND-W vs NED-W Result 2026 | Yaarwin Games',
+  'meta_title' => 'IND-W vs NED-W Result 2026 | gamehub Games',
   'meta_description' => 'India Women vs Netherlands Women T20 World Cup 2026 result recap with verified score, winner, margin, venue and Hinglish match context.',
   'excerpt' => 'Verified Headingley recap: India Women 209/5, Netherlands Women 114 all out, aur 95-run win ne India ko Group A mein strong push diya.',
   'thumb' => 'ind-w-ned-w-preview-2026',
@@ -1699,7 +1699,7 @@ $guides['ind-w-vs-ned-w-result-womens-t20-world-cup-2026'] = [
 $guides['eng-w-vs-sa-w-result-womens-t20-world-cup-2026'] = [
   'type' => 'Cricket Culture',
   'title' => 'ENG-W vs SA-W Result 2026: England ne 40-run semi-final win se final book kiya',
-  'meta_title' => 'ENG-W vs SA-W Result 2026 | Yaarwin Games',
+  'meta_title' => 'ENG-W vs SA-W Result 2026 | gamehub Games',
   'meta_description' => 'England Women vs South Africa Women T20 World Cup 2026 semi-final result recap with verified score, winner, margin and venue.',
   'excerpt' => 'Verified Oval recap: England Women 169/5, South Africa Women 129/8, aur England final mein Australia se milegi.',
   'thumb' => 'eng-w-sa-w-result-2026',
@@ -1717,7 +1717,7 @@ $guides['eng-w-vs-sa-w-result-womens-t20-world-cup-2026'] = [
 $guides['aus-w-vs-eng-w-final-preview-womens-t20-world-cup-2026'] = [
   'type' => 'Cricket Culture',
   'title' => 'AUS-W vs ENG-W Final Preview 2026: Lord\'s trophy test mein kaun thoda aage?',
-  'meta_title' => 'AUS-W vs ENG-W Final Preview 2026 | Yaarwin Games',
+  'meta_title' => 'AUS-W vs ENG-W Final Preview 2026 | gamehub Games',
   'meta_description' => 'Australia Women vs England Women T20 World Cup 2026 final preview with Lord\'s context, balanced Hinglish analysis and responsible reminders.',
   'excerpt' => 'July 5 Lord\'s final preview: Australia slight paper edge, England home momentum fully live, no guaranteed-result claims.',
   'thumb' => 'aus-w-eng-w-final-preview-2026',
@@ -1735,7 +1735,7 @@ $guides['aus-w-vs-eng-w-final-preview-womens-t20-world-cup-2026'] = [
 $guides['eng-w-vs-wi-w-result-womens-t20-world-cup-2026'] = [
   'type' => 'Cricket Culture',
   'title' => 'ENG-W vs WI-W Result 2026: England ne 38-run win se semi-final push seal kiya',
-  'meta_title' => 'ENG-W vs WI-W Result 2026 | Yaarwin Games',
+  'meta_title' => 'ENG-W vs WI-W Result 2026 | gamehub Games',
   'meta_description' => 'England Women vs West Indies Women T20 World Cup 2026 result recap with verified score, winner, margin, venue and Hinglish match context.',
   'excerpt' => 'Verified Lord\'s recap: England Women 186/7, West Indies Women 148/5, aur England ne 38-run win complete ki.',
   'thumb' => 'eng-w-wi-w-result-2026',
@@ -1753,7 +1753,7 @@ $guides['eng-w-vs-wi-w-result-womens-t20-world-cup-2026'] = [
 $guides['eng-w-vs-wi-w-preview-womens-t20-world-cup-2026'] = [
   'type' => 'Cricket Culture',
   'title' => 'ENG-W vs WI-W Preview 2026: Lord\'s top-two pressure test',
-  'meta_title' => 'ENG-W vs WI-W Preview 2026 | Yaarwin Games',
+  'meta_title' => 'ENG-W vs WI-W Preview 2026 | gamehub Games',
   'meta_description' => 'England Women vs West Indies Women T20 World Cup 2026 preview with Lord\'s fixture details, balanced matchup context and responsible reminders.',
   'excerpt' => 'June 24 Lord\'s preview: England slight edge at home, West Indies fully live, and no guaranteed-result language.',
   'thumb' => 'eng-w-wi-w-preview-2026',
@@ -1786,7 +1786,7 @@ $guides['eng-w-vs-wi-w-preview-womens-t20-world-cup-2026'] = [
 $guides['aus-w-vs-pak-w-result-womens-t20-world-cup-2026'] = [
   'type' => 'Cricket Culture',
   'title' => 'AUS-W vs PAK-W Result 2026: Australia ne 113-run win se statement diya',
-  'meta_title' => 'AUS-W vs PAK-W Result 2026 | Yaarwin Games',
+  'meta_title' => 'AUS-W vs PAK-W Result 2026 | gamehub Games',
   'meta_description' => 'Australia Women vs Pakistan Women T20 World Cup 2026 result recap with verified score, winner, margin, venue and Hinglish match context.',
   'excerpt' => 'Verified Headingley recap: Australia Women 199/7, Pakistan Women 86 all out, aur Australia ne 113-run win complete ki.',
   'thumb' => 'aus-w-pak-w-t20wc-2026',
@@ -1811,7 +1811,7 @@ $guides['aus-w-vs-pak-w-result-womens-t20-world-cup-2026'] = [
 $guides['ind-w-vs-ban-w-preview-womens-t20-world-cup-2026'] = [
   'type' => 'Cricket Culture',
   'title' => 'IND-W vs BAN-W Preview 2026: India reset mode mein, Bangladesh upset route live',
-  'meta_title' => 'IND-W vs BAN-W Preview 2026 | Yaarwin Games',
+  'meta_title' => 'IND-W vs BAN-W Preview 2026 | gamehub Games',
   'meta_description' => 'India Women vs Bangladesh Women T20 World Cup 2026 preview with Old Trafford fixture context, balanced Hinglish analysis and responsible-play reminders.',
   'excerpt' => 'June 25 Old Trafford preview: India stronger start karti hai, but Bangladesh early wickets se game ko tight bana sakti hai.',
   'thumb' => 'ind-w-ban-w-preview-2026',
@@ -1836,7 +1836,7 @@ $guides['ind-w-vs-ban-w-preview-womens-t20-world-cup-2026'] = [
 $guides['sa-w-vs-pak-w-result-womens-t20-world-cup-2026'] = [
   'type' => 'Cricket Culture',
   'title' => 'SA-W vs PAK-W Result 2026: South Africa ne Birmingham thriller 2 wickets se nikala',
-  'meta_title' => 'SA-W vs PAK-W Result 2026 | Yaarwin Games',
+  'meta_title' => 'SA-W vs PAK-W Result 2026 | gamehub Games',
   'meta_description' => 'South Africa Women vs Pakistan Women T20 World Cup 2026 result recap with verified score, winner, margin, venue and Hinglish match context.',
   'excerpt' => 'Verified Edgbaston recap: Pakistan Women 126/9, South Africa Women 127/8, aur Proteas ne 2-wicket thriller finish kiya.',
   'thumb' => 'aus-w-sa-w-t20wc-2026',
@@ -1886,7 +1886,7 @@ $guides['sa-w-vs-pak-w-result-womens-t20-world-cup-2026'] = [
 $guides['ind-w-vs-sa-w-preview-womens-t20-world-cup-2026'] = [
   'type' => 'Cricket Culture',
   'title' => 'IND-W vs SA-W Prediction 2026: India thoda aage, lekin South Africa ka pressure route bilkul live hai',
-  'meta_title' => 'IND-W vs SA-W Preview 2026 | Yaarwin Games',
+  'meta_title' => 'IND-W vs SA-W Preview 2026 | gamehub Games',
   'meta_description' => 'India Women vs South Africa Women T20 World Cup 2026 prediction in Hinglish style with Old Trafford context, matchup angles and a balanced probability call (opinion only).',
   'excerpt' => 'Fresh Hinglish preview for June 21 at Old Trafford: India slight edge par hai, but South Africa ka calm squeeze aur April form isko close banata hai.',
   'thumb' => 'aus-w-sa-w-t20wc-2026',
@@ -1921,7 +1921,7 @@ $guides['ind-w-vs-sa-w-preview-womens-t20-world-cup-2026'] = [
       'heading' => 'Final call + soft FOMO CTA',
       'body' => [
         'Balanced probability call: India Women 56% vs South Africa Women 44% (opinion). India slight edge par hai because current World Cup momentum unke favour mein hai, but South Africa fully live hai and this is not a lock by any honest reading.',
-        'Agar aap apni favourite team ko support karne wale ho, toh YaarWin join/register flow match se pehle set kar lena practical rahega. Bas yaad rakho: yeh preview sirf opinion hai, fixed-result ya risk-free claim bilkul nahi.',
+        'Agar aap apni favourite team ko support karne wale ho, toh GameHub join/register flow match se pehle set kar lena practical rahega. Bas yaad rakho: yeh preview sirf opinion hai, fixed-result ya risk-free claim bilkul nahi.',
       ],
     ],
   ],
@@ -1936,7 +1936,7 @@ $guides['ind-w-vs-sa-w-preview-womens-t20-world-cup-2026'] = [
 $guides['aus-vs-sa-womens-t20-world-cup-result-2026'] = [
   'type' => 'Cricket Culture',
   'title' => 'AUS vs SA Women Result 2026: Australia ne 65-run win se World Cup start strong kiya',
-  'meta_title' => 'AUS vs SA Women Result 2026 | Yaarwin Games',
+  'meta_title' => 'AUS vs SA Women Result 2026 | gamehub Games',
   'meta_description' => 'Australia Women vs South Africa Women T20 World Cup 2026 result recap with verified score, winner, margin, venue and quick Hinglish match context.',
   'excerpt' => 'Verified Old Trafford recap: Australia Women 172/8, South Africa Women 107 all out, aur defending pressure match mein Australia ne clean control dikhaya.',
   'thumb' => 'aus-w-sa-w-t20wc-2026',
@@ -1970,7 +1970,7 @@ $guides['aus-vs-sa-womens-t20-world-cup-result-2026'] = [
     [
       'heading' => 'Soft CTA, still responsible',
       'body' => [
-        'Agar aap next Women\'s T20 World Cup match se pehle apni favourite side ko support karna chahte ho, toh YaarWin join/register setup pehle se ready rakhna practical hota hai.',
+        'Agar aap next Women\'s T20 World Cup match se pehle apni favourite side ko support karna chahte ho, toh GameHub join/register setup pehle se ready rakhna practical hota hai.',
         'Bas yaad rakho: result recap facts alag cheez hai, preview opinion alag. Guaranteed outcome mindset avoid karo aur har step ko responsible pace mein lo.',
       ],
     ],
@@ -1986,7 +1986,7 @@ $guides['aus-vs-sa-womens-t20-world-cup-result-2026'] = [
 $guides['wi-vs-sl-1st-odi-result-2026'] = [
   'type' => 'Cricket Culture',
   'title' => 'WI vs SL 1st ODI Result 2026: Sri Lanka ne Sabina Park mein 41-run se control dikhaya',
-  'meta_title' => 'WI vs SL 1st ODI Result 2026 | Yaarwin Games',
+  'meta_title' => 'WI vs SL 1st ODI Result 2026 | gamehub Games',
   'meta_description' => 'West Indies vs Sri Lanka 1st ODI 2026 result recap with verified score, winner, margin, venue and Hinglish match context.',
   'excerpt' => 'Verified Sabina Park recap: Sri Lanka 303/7, West Indies 262, aur visitors ne series mein early edge le liya.',
   'thumb' => 'cricket',
@@ -2021,7 +2021,7 @@ $guides['wi-vs-sl-1st-odi-result-2026'] = [
       'heading' => 'What comes next for fans',
       'body' => [
         'Series ka next marquee point ab West Indies vs Sri Lanka 3rd ODI hai, again Sabina Park mein, Monday, June 8, 2026 ko. Match opinion ke level par close hai because venue same hai aur home correction ka chance bhi real hai.',
-        'Agar aap next match se pehle apni favourite side ko support karne ka mood bana rahe ho, toh YaarWin join/register flow ko match time se pehle calmly check kar lo. Hype mein guaranteed-win thinking avoid karo, aur responsible play mindset rakho.',
+        'Agar aap next match se pehle apni favourite side ko support karne ka mood bana rahe ho, toh GameHub join/register flow ko match time se pehle calmly check kar lo. Hype mein guaranteed-win thinking avoid karo, aur responsible play mindset rakho.',
       ],
     ],
   ],
@@ -2036,7 +2036,7 @@ $guides['wi-vs-sl-1st-odi-result-2026'] = [
 $guides['wi-vs-sl-3rd-odi-preview-2026'] = [
   'type' => 'Cricket Culture',
   'title' => 'WI vs SL 3rd ODI Prediction (Jun 8): West Indies comeback ya Sri Lanka series finish?',
-  'meta_title' => 'WI vs SL 3rd ODI Preview 2026 | Yaarwin Games',
+  'meta_title' => 'WI vs SL 3rd ODI Preview 2026 | gamehub Games',
   'meta_description' => 'West Indies vs Sri Lanka 3rd ODI 2026 prediction in Hinglish style with Sabina Park conditions, series context and a balanced probability call (opinion only).',
   'excerpt' => 'Fresh Hinglish preview for the June 8 ODI at Sabina Park: home correction versus Sri Lanka control, with a balanced probability-style call.',
   'thumb' => 'live',
@@ -2071,7 +2071,7 @@ $guides['wi-vs-sl-3rd-odi-preview-2026'] = [
       'heading' => 'Final call + soft FOMO CTA',
       'body' => [
         'Balanced probability call: Sri Lanka 52% vs West Indies 48% (opinion). Margin narrow hai, so ek strong opening stand ya ek quality spell poora match flip kar sakta hai.',
-        'Agar aap apni favourite team ko support karne wale ho, toh YaarWin par join/register flow match start se pehle set kar lena practical rahega. Bas yaad rakho: yeh preview sirf opinion hai, fixed-result ya risk-free claim bilkul nahi.',
+        'Agar aap apni favourite team ko support karne wale ho, toh GameHub par join/register flow match start se pehle set kar lena practical rahega. Bas yaad rakho: yeh preview sirf opinion hai, fixed-result ya risk-free claim bilkul nahi.',
       ],
     ],
   ],
@@ -2086,7 +2086,7 @@ $guides['wi-vs-sl-3rd-odi-preview-2026'] = [
 $guides['cricket-odds-reading-guide-india'] = [
   'type' => 'Cricket Culture',
   'title' => 'Cricket Odds Reading Guide India: Session Pressure, Price Moves and Cleaner Match Reads',
-  'meta_title' => 'Cricket Odds Reading Guide India | Yaarwin Games',
+  'meta_title' => 'Cricket Odds Reading Guide India | gamehub Games',
   'meta_description' => 'India-focused cricket odds reading guide covering session pressure, live price moves, and cleaner match-reading habits without fake certainty.',
   'excerpt' => 'A practical India-focused guide for reading cricket odds through session pressure, toss context, and first-innings control instead of hype.',
   'thumb' => 'cricket',
@@ -2111,7 +2111,7 @@ $guides['cricket-odds-reading-guide-india'] = [
 $guides['cricket-score-reading-guide-india'] = [
   'type' => 'Cricket Guide',
   'title' => 'Cricket Score Reading Guide India: Powerplay Pressure, Required Rate and What the Numbers Really Mean',
-  'meta_title' => 'Cricket Score Reading Guide India | Yaarwin Games',
+  'meta_title' => 'Cricket Score Reading Guide India | gamehub Games',
   'meta_description' => 'Cricket score reading guide for India-focused readers covering powerplay pressure, run-rate context, wickets in hand, chase tempo, and calmer match-reading habits.',
   'excerpt' => 'A practical India-focused guide for reading cricket scoreboards through overs, wickets, pressure phases, and cleaner chase context.',
   'thumb' => 'cricket-score-reading-guide-india',
@@ -2177,7 +2177,7 @@ $guides['cricket-score-reading-guide-india'] = [
 $guides['match-day-bankroll-discipline-india'] = [
   'type' => 'Responsible Play',
   'title' => 'Match-Day Bankroll Discipline India: Plan Limits and Avoid Chasing',
-  'meta_title' => 'Match-Day Bankroll Discipline India | Yaarwin Games',
+  'meta_title' => 'Match-Day Bankroll Discipline India | gamehub Games',
   'meta_description' => 'A practical match-day bankroll discipline guide for Indian cricket fans covering fixed limits, stop rules, pause signals, and no-chasing habits.',
   'excerpt' => 'A calm match-day checklist for setting limits before the toss, avoiding emotional chasing, and keeping cricket entertainment inside a fixed budget.',
   'thumb' => 'match-day-discipline',
@@ -2244,7 +2244,7 @@ $guides['match-day-bankroll-discipline-india'] = [
 $guides['teen-patti-beginner-mistakes-india'] = [
   'type' => 'Game Guide',
   'title' => 'Teen Patti Beginner Mistakes India: 7 Early Errors That Burn Budget Fast',
-  'meta_title' => 'Teen Patti Beginner Mistakes India | Yaarwin Games',
+  'meta_title' => 'Teen Patti Beginner Mistakes India | gamehub Games',
   'meta_description' => 'Teen Patti beginner mistakes India guide covering loose hands, blind chasing, table-position errors, bankroll slips, and calmer first-session habits.',
   'excerpt' => 'A practical beginner-first Teen Patti guide for Indian readers who want fewer emotional mistakes, cleaner table discipline, and tighter budget control.',
   'thumb' => 'teen-patti-beginner-mistakes-india',
@@ -2307,7 +2307,7 @@ $guides['teen-patti-beginner-mistakes-india'] = [
       'heading' => 'Better next step for Indian readers',
       'body' => [
         'Use this page together with the match-day bankroll discipline guide, the colour prediction beginner checklist, and the guide library so the next session starts with a plan instead of impulse.',
-        'If you continue beyond reading, do it only after checking your budget, session limit, and current registration path carefully. YaarWin access should come after the discipline check, not before it.',
+        'If you continue beyond reading, do it only after checking your budget, session limit, and current registration path carefully. GameHub access should come after the discipline check, not before it.',
       ],
     ],
   ],
@@ -2322,7 +2322,7 @@ $guides['teen-patti-beginner-mistakes-india'] = [
 $guides['aviator-session-timing-guide-india'] = [
   'type' => 'Game Guide',
   'title' => 'Aviator Session Timing Guide India: When to Pause, Review and Keep the Plan Intact',
-  'meta_title' => 'Aviator Session Timing Guide India | Yaarwin Games',
+  'meta_title' => 'Aviator Session Timing Guide India | gamehub Games',
   'meta_description' => 'Aviator session timing guide for Indian readers covering entry discipline, pause signals, review habits, and cleaner short-session control.',
   'excerpt' => 'Aviator works better with timing discipline: short sessions, fixed review points, and clear pause signals before emotion takes over.',
   'thumb' => 'aviator',
@@ -2347,7 +2347,7 @@ $guides['aviator-session-timing-guide-india'] = [
 $guides['rummy-beginner-mistakes-india'] = [
   'type' => 'Game Guide',
   'title' => 'Rummy Beginner Mistakes India: Sequence Traps, Table Speed and Safer First Sessions',
-  'meta_title' => 'Rummy Beginner Mistakes India | Yaarwin Games',
+  'meta_title' => 'Rummy Beginner Mistakes India | gamehub Games',
   'meta_description' => 'Rummy beginner mistakes India guide covering pure sequence pressure, discard pile errors, table-speed drift, budget limits, and calmer first-session habits.',
   'excerpt' => 'A practical Rummy beginner guide for Indian readers who want cleaner sequence discipline, fewer discard mistakes, and better stop rules.',
   'thumb' => 'rummy-beginner-mistakes-india',
@@ -2399,7 +2399,7 @@ $guides['rummy-beginner-mistakes-india'] = [
       'heading' => 'Better next step for Indian readers',
       'body' => [
         'Use this page with the Teen Patti beginner mistakes guide, match-day bankroll discipline guide, and Wingo pattern myths guide so card-game and fast-round habits both stay inside a responsible routine.',
-        'Continue only after checking your budget, session length, account path, and personal limits carefully. YaarWin access ya fresh money action ko recovery mood ke basis par rush mat banao.',
+        'Continue only after checking your budget, session length, account path, and personal limits carefully. GameHub access ya fresh money action ko recovery mood ke basis par rush mat banao.',
       ],
     ],
   ],
@@ -2414,7 +2414,7 @@ $guides['rummy-beginner-mistakes-india'] = [
 $guides['andar-bahar-beginner-guide-india'] = [
   'type' => 'Game Guide',
   'title' => 'Andar Bahar Beginner Guide India: Fast Card Rounds, Limits and Calmer First Sessions',
-  'meta_title' => 'Andar Bahar Beginner Guide India | Yaarwin Games',
+  'meta_title' => 'Andar Bahar Beginner Guide India | gamehub Games',
   'meta_description' => 'Andar Bahar beginner guide India covering fast card-round basics, simple table checks, budget limits, pause signals and responsible first-session habits.',
   'excerpt' => 'A beginner-first Andar Bahar guide for Indian readers who want simple card-round context, fixed limits, and fewer rushed session mistakes.',
   'thumb' => 'andar-bahar-beginner-guide-india',
@@ -2467,7 +2467,7 @@ $guides['andar-bahar-beginner-guide-india'] = [
 $guides['colour-prediction-beginner-checklist-india'] = [
   'type' => 'Game Guide',
   'title' => 'Colour Prediction Beginner Checklist India: Round Speed, Limits and Cleaner First Sessions',
-  'meta_title' => 'Colour Prediction Beginner Checklist India | Yaarwin Games',
+  'meta_title' => 'Colour Prediction Beginner Checklist India | gamehub Games',
   'meta_description' => 'Beginner checklist for colour prediction readers in India, covering round speed, budget limits, streak myths, and cleaner first-session habits.',
   'excerpt' => 'A beginner-first checklist for colour prediction readers who want round-speed awareness, budget limits, and fewer pattern myths.',
   'thumb' => 'wingo',
@@ -2492,7 +2492,7 @@ $guides['colour-prediction-beginner-checklist-india'] = [
 $guides['wingo-pattern-myths-india'] = [
   'type' => 'Game Guide',
   'title' => 'Wingo Pattern Myths India: Why Fast Round Streaks Mislead Beginners',
-  'meta_title' => 'Wingo Pattern Myths India | Yaarwin Games',
+  'meta_title' => 'Wingo Pattern Myths India | gamehub Games',
   'meta_description' => 'Wingo pattern myths India guide covering fast-round streak traps, chart-reading mistakes, budget drift, and calmer beginner habits before another session.',
   'excerpt' => 'A myth-busting Wingo guide for Indian beginners who want cleaner chart reading, tighter limits, and fewer fast-round mistakes.',
   'thumb' => 'wingo',
@@ -2560,7 +2560,7 @@ $guides['wingo-pattern-myths-india'] = [
 $guides['wingo-bankroll-checklist-india'] = [
   'type' => 'Game Guide',
   'title' => 'Wingo Bankroll Checklist India: Round Limits, Pause Rules and Pattern Myths',
-  'meta_title' => 'Wingo Bankroll Checklist India | Yaarwin Games',
+  'meta_title' => 'Wingo Bankroll Checklist India | gamehub Games',
   'meta_description' => 'Wingo bankroll checklist for Indian readers covering round limits, pause rules, pattern-myth caution and safer short-session habits.',
   'excerpt' => 'A practical Wingo checklist for Indian readers who want round limits, pause rules and safer short-session habits before reacting to fast results.',
   'thumb' => 'wingo-bankroll-checklist-india',
@@ -2618,7 +2618,7 @@ $guides['wingo-bankroll-checklist-india'] = [
 $guides['session-limit-checklist-india'] = [
   'type' => 'Responsible Play',
   'title' => 'Session Limit Checklist India: Stop Rules Before Fast Games',
-  'meta_title' => 'Session Limit Checklist India | Yaarwin Games',
+  'meta_title' => 'Session Limit Checklist India | gamehub Games',
   'meta_description' => 'Session limit checklist India guide covering fixed budgets, stop rules, pause signals, proof habits and calmer decisions before fast mobile games.',
   'excerpt' => 'A practical stop-rule checklist for Indian readers who want clearer limits before fast rounds, card games or match-day sessions.',
   'thumb' => 'session-limit-checklist-india',
@@ -2678,8 +2678,8 @@ $guides['session-limit-checklist-india'] = [
 $guides['the-rise-of-mobile-gaming-in-south-asia'] = [
   'type' => 'Mobile Culture',
   'title' => 'The Rise of Mobile Gaming in South Asia',
-  'meta_title' => 'The Rise of Mobile Gaming in South Asia | Yaarwin Games',
-  'meta_description' => 'A simple Yaarwin Games guide article about why mobile gaming is growing so quickly across South Asia.',
+  'meta_title' => 'The Rise of Mobile Gaming in South Asia | gamehub Games',
+  'meta_description' => 'A simple gamehub Games guide article about why mobile gaming is growing so quickly across South Asia.',
   'excerpt' => 'Affordable phones, cheaper data, local payments and younger digital audiences are pushing mobile gaming growth across South Asia.',
   'thumb' => 'mobile-south-asia',
   'keywords' => ['mobile gaming South Asia', 'phone gaming India', 'digital entertainment South Asia', 'mobile-first gaming'],
@@ -2735,7 +2735,7 @@ $guides['the-rise-of-mobile-gaming-in-south-asia'] = [
 $guides['communities-games-and-connections-digital-entertainment'] = [
   'type' => 'Digital Culture',
   'title' => 'Communities, Games, and Connections: The Social Side of Digital Entertainment',
-  'meta_title' => 'Communities, Games, and Connections | Yaarwin Games',
+  'meta_title' => 'Communities, Games, and Connections | gamehub Games',
   'meta_description' => 'A digital culture guide about gaming communities, referrals, leaderboards, live events, trust, and responsible participation.',
   'excerpt' => 'Online gaming now works as a social space where users share ideas, build communities, and learn why trust matters more than hype.',
   'thumb' => 'social-communities',

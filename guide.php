@@ -23,8 +23,8 @@ if (!$guide) {
   $guide = [
     'type' => 'Guide',
     'title' => 'Guide not found',
-    'meta_title' => 'Guide not found | Yaarwin Games',
-    'meta_description' => 'The requested Yaarwin Games guide could not be found.',
+    'meta_title' => 'Guide not found | gamehub Games',
+    'meta_description' => 'The requested gamehub Games guide could not be found.',
     'excerpt' => 'The requested guide could not be found.',
     'thumb' => 'cricket',
     'keywords' => [],
@@ -35,7 +35,7 @@ if (!$guide) {
   ];
 }
 
-$canonical = $slug ? 'https://yaarwinapp.games/guides/' . $slug . '/' : 'https://yaarwinapp.games/guides/';
+$canonical = $slug ? 'https://gamehubapp.games/guides/' . $slug . '/' : 'https://gamehubapp.games/guides/';
 $relatedGuides = array_values(array_filter(array_map(fn($relatedSlug) => $guides[$relatedSlug] ?? null, $guide['related'] ?? [])));
 ?>
 <!doctype html>
@@ -61,7 +61,7 @@ $relatedGuides = array_values(array_filter(array_map(fn($relatedSlug) => $guides
   <meta property="og:description" content="<?= esc($guide['meta_description']) ?>">
   <meta property="og:type" content="article">
   <meta property="og:url" content="<?= esc($canonical) ?>">
-  <meta property="og:site_name" content="Yaarwin Games">
+  <meta property="og:site_name" content="gamehub Games">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#07111F">
   <link rel="icon" href="<?= esc(asset_url('/assets/img/favicon.png')) ?>" type="image/png">
@@ -92,8 +92,8 @@ $relatedGuides = array_values(array_filter(array_map(fn($relatedSlug) => $guides
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header" id="top">
     <nav class="nav-shell" aria-label="Primary navigation">
-      <a class="brand" href="/" aria-label="Yaarwin Games home">
-        <img class="brand-logo" src="<?= esc(asset_url('/assets/img/yaarwin-games-logo.webp')) ?>" alt="Yaarwin Games" width="224" height="90" decoding="async">
+      <a class="brand" href="/" aria-label="gamehub Games home">
+        <img class="brand-logo" src="<?= esc(asset_url('/assets/img/gamehub-games-logo.webp')) ?>" alt="gamehub Games" width="224" height="90" decoding="async">
       </a>
       <button class="menu-toggle" type="button" aria-controls="primary-menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -160,7 +160,7 @@ $relatedGuides = array_values(array_filter(array_map(fn($relatedSlug) => $guides
           <p class="eyebrow">Independent guide notice</p>
           <h2>Want to review the current registration path?</h2>
           <p>This article is an independent guide. If you choose to continue beyond reading, review the latest terms carefully and use the current registration path only after checking whether the platform suits you.</p>
-          <a class="btn btn-primary" href="https://yaarwin.org/#/register?invitationCode=72238107987" rel="nofollow sponsored noopener" target="_blank">Open registration path <span aria-hidden="true" class="btn-arrow">→</span></a>
+          <a class="btn btn-primary" href="https://gamehub.org/#/register?invitationCode=72238107987" rel="nofollow sponsored noopener" target="_blank">Open registration path <span aria-hidden="true" class="btn-arrow">→</span></a>
         </aside>
 
         <?php if (!empty($guide['faq'])): ?>
@@ -197,8 +197,8 @@ $relatedGuides = array_values(array_filter(array_map(fn($relatedSlug) => $guides
 
   <footer class="site-footer">
     <div class="footer-brand">
-      <a class="brand footer-logo-link" href="/" aria-label="Yaarwin Games home">
-        <img class="brand-logo footer-logo" src="<?= esc(asset_url('/assets/img/yaarwin-games-logo.webp')) ?>" alt="Yaarwin Games" width="260" height="105" loading="lazy" decoding="async">
+      <a class="brand footer-logo-link" href="/" aria-label="gamehub Games home">
+        <img class="brand-logo footer-logo" src="<?= esc(asset_url('/assets/img/gamehub-games-logo.webp')) ?>" alt="gamehub Games" width="260" height="105" loading="lazy" decoding="async">
       </a>
       <p>Your independent hub for cricket culture, trending games & digital entertainment content — made for India.</p>
     </div>
@@ -224,9 +224,9 @@ $relatedGuides = array_values(array_filter(array_map(fn($relatedSlug) => $guides
     </div>
     <div class="note-box">
       <h2>Important Note</h2>
-      <p>Yaarwin Games is an independent entertainment and game-information hub. We do not operate games, account systems, payment flows, or prize services.</p>
+      <p>gamehub Games is an independent entertainment and game-information hub. We do not operate games, account systems, payment flows, or prize services.</p>
     </div>
-    <p class="copyright">© 2026 Yaarwin Games. All rights reserved.</p>
+    <p class="copyright">© 2026 gamehub Games. All rights reserved.</p>
   </footer>
   <script src="<?= esc(asset_url('/assets/js/site.js')) ?>" defer></script>
 </body>
