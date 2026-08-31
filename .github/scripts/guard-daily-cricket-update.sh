@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-echo "Checking Yaarwin Games automation safety boundaries..."
+echo "Checking GameHub Games automation safety boundaries..."
 
 changed_files="$(
   {
@@ -19,7 +19,7 @@ if [ -n "$changed_files" ]; then
       index.php|guide-data.php|sitemap.xml|assets/img/thumb_*)
         ;;
       *)
-        echo "::error file=$path::Yaarwin Games automation may not change this path."
+        echo "::error file=$path::GameHub Games automation may not change this path."
         blocked=1
         ;;
     esac
@@ -30,8 +30,8 @@ fi
 
 required_home_markers=(
   "require __DIR__ . '/guide-data.php'"
-  "Yaarwin Games | Cricket Culture & Trending Game Guides for India"
-  "id=\"YaarwinGamesRichResultSchema\""
+  "GameHub Games | Cricket Culture & Trending Game Guides for India"
+  "id=\"GameHubGamesRichResultSchema\""
   "isset(\$_GET['ywag_admin'])"
   "assets/data/ywag-visits.json"
   "AW-18157597075"
@@ -86,7 +86,7 @@ php -d display_errors=1 -r '$_SERVER["REQUEST_URI"]="/"; include "index.php";' >
 php -d display_errors=1 -r '$_SERVER["REQUEST_URI"]="/guides/"; include "index.php";' > "$library_render"
 php -d display_errors=1 -r '$_SERVER["REQUEST_URI"]="/guides/cricket-games-india/"; include "index.php";' > "$guide_render"
 
-if ! grep -Fq '<title>Yaarwin Games | Cricket Culture & Trending Game Guides for India</title>' "$home_render"; then
+if ! grep -Fq '<title>GameHub Games | Cricket Culture & Trending Game Guides for India</title>' "$home_render"; then
   echo "::error file=index.php::Homepage smoke render lost the protected title."
   blocked=1
 fi
@@ -100,8 +100,8 @@ if grep -Eqi 'fatal error|warning:|parse error' "$home_render" "$library_render"
 fi
 
 if [ "$blocked" -ne 0 ]; then
-  echo "Yaarwin Games safety guard failed. No commit will be pushed."
+  echo "GameHub Games safety guard failed. No commit will be pushed."
   exit 1
 fi
 
-echo "Yaarwin Games safety guard passed."
+echo "GameHub Games safety guard passed."
